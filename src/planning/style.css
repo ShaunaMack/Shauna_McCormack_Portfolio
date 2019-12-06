@@ -1,0 +1,88 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 10%;
+    color: #3C3C30;
+}
+
+.container {
+    border: 2px solid #a2a2a6;
+    padding: 10px;
+    margin: 10px auto; 
+}
+
+.color-panel {
+  color: #DFDCD9;
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 150px;
+    
+}
+
+
+.font-label-source-code-pro, .regular-source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+}
+.bold-source-code-pro {
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+}
+
+.font-label-shadows-light, .regular-shadows {
+font-family: 'Shadows Into Light', cursive;
+}
+
+.regular-shadows {
+font-family: 'Shadows Into Light', cursive;
+}
+
+.font-label-open-sans, .regular-open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bold-open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+.light-open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.italic-open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+}
+
+.font-label-fred, .regular-fred {
+  font-family: 'Fredericka the Great', cursive;
+}
+
+
+.pale-violet-pink {
+    background-color: #C88F90;
+  }
+  
+.dark-olive-green {
+  background-color: #3C3C30;
+}
+
+.peru {
+  background-color: #C08F38;
+}
+
+.old-rose {
+  background-color: #A84D45;
+}
+
+.gainsboro {
+  color: #3C3C30;
+  background-color: #DFDCD9;
+}
+
+h1 {
+  font-family: 'Fredericka the Great', cursive;
+}
+
