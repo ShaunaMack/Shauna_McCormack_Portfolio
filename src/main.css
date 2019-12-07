@@ -56,17 +56,28 @@ li a:visited {
   color: #C88F90;
 }
 
+li a:active {
+  background-color: #C08F38;
+}
+
 .content {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
-  height: 100%;
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
 }
 
 div.ducks {
   height: 90%;
-  width: 90%;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: ducks;
@@ -77,15 +88,15 @@ div.ducks {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0.5em;
 }
 
 div.ducks img {
   width: 90%;
   border-radius: 5%;
-  border: 2px solid #A84D45;
   padding: 1em;
 }
 
@@ -145,7 +156,7 @@ div.ducks .name-box .inner-code {
   .wrapper {
     -ms-grid-columns: 0.25fr 3fr 0.25fr;
         grid-template-columns: 0.25fr 3fr 0.25fr;
-        grid-template-areas: "header header header" ". ducks ." ". content ." "footer footer footer";
+        grid-template-areas: "header header header" ". content ." ". ducks ." "footer footer footer";
   }
   div.ducks .name-box {
     font-size: 1em;

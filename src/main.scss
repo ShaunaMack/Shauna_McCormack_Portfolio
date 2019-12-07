@@ -69,23 +69,28 @@ li a:active {
 
 .content {
     grid-area: content;
-    height: 100%;
-    width: 100%;
+    // height: 100%;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    
 }
 
 div.ducks {
     height: 90%;
-    width: 90%;
+    // width: 90%;
     grid-area: ducks;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 1em;
+    justify-content: center;
+    margin: 0.5em;
     
     img{
         width: 90%;
         border-radius: 5%;
-        border: 2px solid $red;
+        // border: 2px solid $red;
         padding: 1em;
     }
 
@@ -142,8 +147,8 @@ div.ducks {
       grid-template-columns: 0.25fr 3fr 0.25fr;
       grid-template-areas: 
         "header header header"
-        ". ducks ."
         ". content ."
+        ". ducks ."
         "footer footer footer";
     }
     div.ducks .name-box{
