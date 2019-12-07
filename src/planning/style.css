@@ -11,7 +11,7 @@ body {
 }
 
 .color-panel {
-  color: #DFDCD9;
+    color: #DFDCD9;
     display: inline-block;
     width: 15%;
     text-align: center;
@@ -27,14 +27,6 @@ body {
 .bold-source-code-pro {
   font-family: 'Source Code Pro', monospace;
   font-weight: 700;
-}
-
-.font-label-shadows-light, .regular-shadows {
-font-family: 'Shadows Into Light', cursive;
-}
-
-.regular-shadows {
-font-family: 'Shadows Into Light', cursive;
 }
 
 .font-label-open-sans, .regular-open-sans {

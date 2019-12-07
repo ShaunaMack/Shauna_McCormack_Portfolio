@@ -1,0 +1,40 @@
+$dark_font: #3C3C30;
+$light_font: #DFDCD9;
+$pink_font: #C88F90;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-family: 'Fredericka the Great', cursive;
+    color: $dark_font;
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+
+    .box{
+        height: 20em;
+        width: 20em;
+        border: 1px $dark_font solid;
+        margin: 2em;
+    }
+
+    .b1{
+        background-color: #C88F90;
+    }
+
+}
