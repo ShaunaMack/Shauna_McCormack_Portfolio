@@ -35,11 +35,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  width: 100vw;
   background-color: #3C3C30;
-}
-
-li {
-  float: right;
 }
 
 li a {
@@ -47,13 +44,16 @@ li a {
   display: block;
   color: #DFDCD9;
   text-align: center;
-  padding: .75em 1em;
-  border-left: 1px solid #DFDCD9;
-  font-size: .75em;
+  padding: .5em 1em;
+  border-bottom: #DFDCD9 1px solid;
 }
 
 li a:hover {
   background-color: #A84D45;
+}
+
+li a:visited {
+  color: #C88F90;
 }
 
 .content {
@@ -149,6 +149,18 @@ div.ducks .name-box .inner-code {
   }
   div.ducks .name-box {
     font-size: 1em;
+  }
+  li {
+    float: right;
+  }
+  li a {
+    text-decoration: none;
+    display: block;
+    color: #DFDCD9;
+    text-align: center;
+    padding: .75em 1em;
+    border-left: 1px solid #DFDCD9;
+    font-size: 1.2em;
   }
 }
 

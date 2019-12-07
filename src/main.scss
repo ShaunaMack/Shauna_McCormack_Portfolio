@@ -2,6 +2,7 @@ $dark: #3C3C30;
 $light: #DFDCD9;
 $pink: #C88F90;
 $red: #A84D45;
+$peru: #C08F38;
 
 *{
     margin: 0;
@@ -40,27 +41,30 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100vw;
     background-color: $dark;
 }
 
-li {
-    float: right;
-}
 
 li a {
     text-decoration: none;
     display: block;
     color: $light;
     text-align: center;
-    padding: .75em 1em;
-    border-left: 1px solid $light;
-    font-size: .75em;
+    padding: .5em 1em;
+    border-bottom: $light 1px solid;
 }
-
-
 
 li a:hover {
     background-color: $red;
+}
+
+li a:visited {
+    color: $pink;
+}
+
+li a:active {
+    background-color: $peru;
 }
 
 .content {
@@ -145,6 +149,21 @@ div.ducks {
     div.ducks .name-box{
         font-size: 1em;
     }
+
+    li {
+        float: right;
+    }
+    
+    li a {
+        text-decoration: none;
+        display: block;
+        color: $light;
+        text-align: center;
+        padding: .75em 1em;
+        border-left: 1px solid $light;
+        font-size: 1.2em;
+    }
+    
 
 }
 
