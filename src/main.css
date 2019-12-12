@@ -42,28 +42,18 @@ ul {
 li a {
   text-decoration: none;
   display: block;
-  color: #DFDCD9;
+  color: #C88F90;
   text-align: center;
   padding: .5em 1em;
   border-bottom: #DFDCD9 1px solid;
-}
-
-li a:hover {
-  background-color: #A84D45;
-}
-
-li a:visited {
-  color: #C88F90;
-}
-
-li a:active {
-  background-color: #C08F38;
 }
 
 .content {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
+  height: 100%;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +64,26 @@ li a:active {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: center;
+  padding: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #A84D45;
+}
+
+a:hover {
+  color: #DFDCD9;
+  background-color: #A84D45;
+  opacity: 75%;
+  border-radius: 5%;
+}
+
+a:focus-within {
+  background-color: #A84D45;
+  color: #DFDCD9;
+  opacity: 75%;
+  border-radius: 5%;
 }
 
 div.ducks {
@@ -152,6 +162,44 @@ div.ducks .name-box .inner-code {
   background-color: #C88F90;
 }
 
+.a {
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(/docs/myface.JPG);
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 10px 1px #000;
+          box-shadow: 0 0 10px 1px #000;
+}
+
+.b {
+  width: 0;
+  height: 200px;
+  overflow: hidden;
+  margin-left: -50px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.a:hover .b {
+  width: 400px;
+}
+
+.c {
+  width: 400px;
+  height: 200px;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  background-image: url(/docs/Rick.JPG);
+}
+
 @media (min-width: 500px) {
   .wrapper {
     -ms-grid-columns: 0.25fr 3fr 0.25fr;
@@ -165,10 +213,6 @@ div.ducks .name-box .inner-code {
     float: right;
   }
   li a {
-    text-decoration: none;
-    display: block;
-    color: #DFDCD9;
-    text-align: center;
     padding: .75em 1em;
     border-left: 1px solid #DFDCD9;
     font-size: 1.2em;
