@@ -21,6 +21,12 @@ h1{
     text-align: center;
 }
 
+h2{
+    font-family: 'Fredericka the Great', cursive;
+    color: $red;
+    text-align: center;
+}
+
 .wrapper{
     display: grid;
     grid-gap: 2em;
@@ -140,50 +146,92 @@ div.ducks {
     width: 100%;
 
     .box{
-        height: 20em;
-        width: 20em;
+        height: 300px;
+        width: 300px;
         border: 1px $dark solid;
-        margin: 2em;
-        background-color: #C88F90
-    }
-}
+        margin: 10px;
+        background-color: $pink;
 
+    }
+
+    .block {
+        height: 200px;
+        width: 320px;
+        // border: 1px solid $red;
+        margin: 10px;
+       
+    }
+
+}
 
 // about me photo changer
-    
-.a {
-    width:320px; 
-    height:200px;
-    overflow:hidden;
-    background-image:url(/docs/myface.JPG);
-    position:absolute;
-    margin:auto;
-    top:0px;
-    bottom:0;
-    left:0;
-    right:0;
-    box-shadow:0 0 10px 1px #000;
+
+.my-face {
+    .a {
+        width: 320px; 
+        height: 200px;
+        overflow: hidden;
+        background-image: url(/docs/myface.JPG);
+        // position: absolute;
+        margin: auto;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 10px 1px #000;
+    }
+
+    .b {
+        width: 0; 
+        height: 200px;
+        overflow: hidden;
+        margin-left: -50px;
+        transform: skew(-20deg);
+        transition: width 1s ease;
+    }		
+    .a:hover .b {
+        width: 400px;
+    }
+
+    .c {
+        width: 400px; 
+        height: 200px;
+        transform: skew(20deg);
+    //   margin-left:-30px;
+        background-image: url(/docs/Rick.JPG);
+    }		
 }
 
-.b {
-    width:0; 
-    height:200px;
-    overflow:hidden;
-    margin-left:-50px;
-    transform:skew(-20deg);
-    transition:width 1s ease;
-}		
-.a:hover .b {
-    width:400px;
+
+// tick animation
+.tick{
+    margin-top: 40px;
+    margin-left: 40%;
+    position: fixed;
+    margin-top: 70px;
+    width: 12px;
+    height:25px;
+    border-top: 5px solid $red;
+    border-right: 5px solid $red;
+    transform-origin:left top;
+    transform: scaleX(-1) rotate(140deg);
+    animation: tick 1s ease infinite;
 }
 
-.c {
-    width:400px; 
-    height:200px;
-    transform:skew(20deg);
-//   margin-left:-30px;
-    background-image:url(/docs/Rick.JPG);
-}		
+@keyframes tick{
+  0%{
+      width: 0px;
+      height:0px;
+  }
+  50%{
+      width: 12px;
+      height:0px;
+  }
+  100%{ 
+      width: 12px;
+      height:25px;
+  }
+}
 
 @media (min-width: 500px) {
     .wrapper {

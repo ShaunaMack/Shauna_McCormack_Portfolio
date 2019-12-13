@@ -15,6 +15,12 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  color: #A84D45;
+  text-align: center;
+}
+
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -155,19 +161,24 @@ div.ducks .name-box .inner-code {
 }
 
 .container .box {
-  height: 20em;
-  width: 20em;
+  height: 300px;
+  width: 300px;
   border: 1px #3C3C30 solid;
-  margin: 2em;
+  margin: 10px;
   background-color: #C88F90;
 }
 
-.a {
+.container .block {
+  height: 200px;
+  width: 320px;
+  margin: 10px;
+}
+
+.my-face .a {
   width: 320px;
   height: 200px;
   overflow: hidden;
   background-image: url(/docs/myface.JPG);
-  position: absolute;
   margin: auto;
   top: 0px;
   bottom: 0;
@@ -177,7 +188,7 @@ div.ducks .name-box .inner-code {
           box-shadow: 0 0 10px 1px #000;
 }
 
-.b {
+.my-face .b {
   width: 0;
   height: 200px;
   overflow: hidden;
@@ -188,16 +199,63 @@ div.ducks .name-box .inner-code {
   transition: width 1s ease;
 }
 
-.a:hover .b {
+.my-face .a:hover .b {
   width: 400px;
 }
 
-.c {
+.my-face .c {
   width: 400px;
   height: 200px;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   background-image: url(/docs/Rick.JPG);
+}
+
+.tick {
+  margin-top: 40px;
+  margin-left: 40%;
+  position: fixed;
+  margin-top: 70px;
+  width: 12px;
+  height: 25px;
+  border-top: 5px solid #A84D45;
+  border-right: 5px solid #A84D45;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scaleX(-1) rotate(140deg);
+          transform: scaleX(-1) rotate(140deg);
+  -webkit-animation: tick 1s ease infinite;
+          animation: tick 1s ease infinite;
+}
+
+@-webkit-keyframes tick {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 12px;
+    height: 0px;
+  }
+  100% {
+    width: 12px;
+    height: 25px;
+  }
+}
+
+@keyframes tick {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  50% {
+    width: 12px;
+    height: 0px;
+  }
+  100% {
+    width: 12px;
+    height: 25px;
+  }
 }
 
 @media (min-width: 500px) {
