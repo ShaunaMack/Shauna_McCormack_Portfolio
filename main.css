@@ -174,7 +174,7 @@ div.ducks .name-box .inner-code {
   margin: 10px;
 }
 
-.my-face .a {
+.my-face .me-original {
   width: 320px;
   height: 200px;
   overflow: hidden;
@@ -188,7 +188,7 @@ div.ducks .name-box .inner-code {
           box-shadow: 0 0 10px 1px #000;
 }
 
-.my-face .b {
+.my-face .change {
   width: 0;
   height: 200px;
   overflow: hidden;
@@ -199,11 +199,11 @@ div.ducks .name-box .inner-code {
   transition: width 1s ease;
 }
 
-.my-face .a:hover .b {
+.my-face .me-original:hover .change {
   width: 400px;
 }
 
-.my-face .c {
+.my-face .cat-pic {
   width: 400px;
   height: 200px;
   -webkit-transform: skew(20deg);
