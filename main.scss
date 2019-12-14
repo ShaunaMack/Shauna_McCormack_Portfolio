@@ -4,6 +4,8 @@ $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
 
+// _catanimate.scss
+
 *{
     margin: 0;
     padding: 0;
@@ -130,12 +132,14 @@ div.ducks {
 }
   
 .footer {
-    grid-area: footer;
-    text-align: center;
-    font-size: .75em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     color: $red;
-    border-top: $red solid 1px;
-}
+    text-align: center;
+    border-top: solid 1px $red;
+ }
 
 .container{
     display: flex;
@@ -159,6 +163,7 @@ div.ducks {
         width: 320px;
         // border: 1px solid $red;
         margin: 10px;
+       
        
     }
 
@@ -200,36 +205,37 @@ div.ducks {
     }		
 }
 
+@import 'catanimate';
 
 // tick animation
-.tick{
-    margin-top: 40px;
-    margin-left: 40%;
-    position: fixed;
-    margin-top: 70px;
-    width: 12px;
-    height:25px;
-    border-top: 5px solid $red;
-    border-right: 5px solid $red;
-    transform-origin:left top;
-    transform: scaleX(-1) rotate(140deg);
-    animation: tick 1s ease infinite;
-}
+// .tick{
+//     margin-top: 40px;
+//     margin-left: 40%;
+//     position: fixed;
+//     margin-top: 70px;
+//     width: 12px;
+//     height:25px;
+//     border-top: 5px solid $red;
+//     border-right: 5px solid $red;
+//     transform-origin:left top;
+//     transform: scaleX(-1) rotate(140deg);
+//     animation: tick 1s ease infinite;
+// }
 
-@keyframes tick{
-  0%{
-      width: 0px;
-      height:0px;
-  }
-  50%{
-      width: 12px;
-      height:0px;
-  }
-  100%{ 
-      width: 12px;
-      height:25px;
-  }
-}
+// @keyframes tick{
+//   0%{
+//       width: 0px;
+//       height:0px;
+//   }
+//   50%{
+//       width: 12px;
+//       height:0px;
+//   }
+//   100%{ 
+//       width: 12px;
+//       height:25px;
+//   }
+// }
 
 @media (min-width: 500px) {
     .wrapper {

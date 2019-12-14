@@ -1,43 +1,35 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #DFDCD9;
-}
-
 .circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: #C88F90;
-  margin-left: 500px;
 }
 
 .circle .face {
   position: absolute;
   margin-left: 70px;
   margin-top: 40px;
-  height: 85px;
+  height: 80px;
   width: 100px;
   border-radius: 50%;
   border: 1px solid transparent;
   background-color: #DFDCD9;
 }
 
-.circle .nose {
+.circle .face .nose {
   background-color: #A84D45;
-  display: inline-block;
   height: 7px;
-  margin: 0 10px;
+  margin: 0 50px;
   position: relative;
-  bottom: -40px;
+  bottom: -45px;
   right: 5px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   width: 7px;
 }
 
-.circle .nose:before,
-.circle .nose:after {
+.circle .face .nose:before,
+.circle .face .nose:after {
   content: "";
   background-color: #A84D45;
   border-radius: 50%;
@@ -46,17 +38,17 @@ body {
   width: 7px;
 }
 
-.circle .nose:before {
+.circle .face .nose:before {
   top: -5px;
   left: 0;
 }
 
-.circle .nose:after {
+.circle .face .nose:after {
   left: 5px;
   top: 0;
 }
 
-.circle .eye1, .circle .eye2 {
+.circle .face .eye1, .circle .face .eye2 {
   position: relative;
   background-color: #3C3C30;
   height: 20px;
@@ -67,11 +59,11 @@ body {
   left: 16px;
 }
 
-.circle .eye2 {
+.circle .face .eye2 {
   left: 38px;
 }
 
-.circle .p1, .circle .p2 {
+.circle .face .p1, .circle .face .p2 {
   position: relative;
   height: 10px;
   width: 10px;
@@ -81,32 +73,30 @@ body {
   left: 7px;
 }
 
-.circle .r_ear, .circle .l_ear {
+.circle .face .r_ear, .circle .face .l_ear {
   position: relative;
-  height: 0;
-  width: 0;
   border-bottom: 35px solid #DFDCD9;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   float: left;
-  bottom: 38px;
+  bottom: 30px;
   left: 10px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
 
-.circle .l_ear {
-  bottom: 65px;
-  left: -3px;
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
+.circle .face .l_ear {
+  bottom: 52px;
+  left: -6px;
+  -webkit-transform: rotate(-42deg);
+          transform: rotate(-42deg);
 }
 
-.circle .r_ear {
-  bottom: 32px;
+.circle .face .r_ear {
+  bottom: 25px;
   left: 14px;
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
 }
 
 .circle .tummy {
