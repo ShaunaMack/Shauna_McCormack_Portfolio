@@ -136,9 +136,11 @@ div.ducks {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: $red;
+    color: $light;
     text-align: center;
-    border-top: solid 1px $red;
+    font-size: 0.75em;
+    background-color: $dark;
+    
  }
 
 .container{
@@ -162,7 +164,7 @@ div.ducks {
         height: 200px;
         width: 320px;
         // border: 1px solid $red;
-        margin: 10px;
+        margin: 20px;
        
        
     }
@@ -206,6 +208,7 @@ div.ducks {
 }
 
 @import 'catanimate';
+@import 'projects';
 
 // tick animation
 // .tick{

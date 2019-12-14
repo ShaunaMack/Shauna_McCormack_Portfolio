@@ -140,9 +140,10 @@ div.ducks .name-box .inner-code {
   left: 0;
   bottom: 0;
   width: 100%;
-  color: #A84D45;
+  color: #DFDCD9;
   text-align: center;
-  border-top: solid 1px #A84D45;
+  font-size: 0.75em;
+  background-color: #3C3C30;
 }
 
 .container {
@@ -171,7 +172,7 @@ div.ducks .name-box .inner-code {
 .container .block {
   height: 200px;
   width: 320px;
-  margin: 10px;
+  margin: 20px;
 }
 
 .my-face .me-original {

@@ -1,0 +1,33 @@
+.project {
+    .me-original {
+        width: 320px; 
+        height: 200px;
+        overflow: hidden;
+        background-image: url(./docs/myface.JPG);
+        margin: auto;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 10px 1px #000;
+    }
+
+    .change {
+        width: 0; 
+        height: 200px;
+        overflow: hidden;
+        margin-left: -50px;
+        transform: skew(-20deg);
+        transition: width 1s ease;
+    }		
+    .me-original:hover .change {
+        width: 400px;
+    }
+
+    .cat-pic {
+        width: 400px; 
+        height: 200px;
+        transform: skew(20deg);
+        background-image: url(./docs/Rick.JPG);
+    }		
+}
