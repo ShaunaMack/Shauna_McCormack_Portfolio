@@ -10,6 +10,10 @@ $peru: #C08F38;
     padding: 0;
 }
 
+p,h1,h2,h3,h4,h5,h6{
+    margin-bottom: 10px;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: $light;
@@ -168,9 +172,8 @@ div.ducks {
     .block {
         height: 200px;
         width: 320px;
-        // border: 1px solid $red;
         margin: 20px;
-       
+        text-align: center;
     }
 
 }
@@ -208,10 +211,42 @@ div.ducks {
         height: 200px;
         transform: skew(20deg);
         background-image: url(./docs/Rick.JPG);
+        opacity: 50%;
     }		
 }
-@import 'projects';
+    
 
+.button {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    border: $red solid 2px;
+    border-radius: 20%;
+    margin-left: 100px;
+    margin-top: 10px;
+    color: $red;
+
+    .btn-words{
+        font-size: 0.75em;
+    }
+
+    &:hover {
+        transition: all .2s ease-in-out;
+        background-color: $pink;
+        transform: scale(1.5);
+        color: $light;
+        }
+}
+
+
+
+
+
+
+
+@import 'projects';
 @import 'catanimate';
 
 

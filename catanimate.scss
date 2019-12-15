@@ -8,9 +8,9 @@ $peru: #C08F38;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: $pink;
-    // margin-left: 25%;
-    // margin-top: 25%;
+    background-color: #C88F90;
+    
+    margin-left: 50px;
 
 
 
@@ -126,12 +126,12 @@ $peru: #C08F38;
         left: 15px;
         transform-origin: bottom;
         transform: rotate(-35deg);
-        animation:a 1s infinite;
+        animation:wag 1s infinite;
         z-index: 1;
     }
 }
 
-@keyframes a{
+@keyframes wag{
     50%{
         transform: rotate(-90deg);
     }
