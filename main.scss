@@ -11,7 +11,7 @@ $peru: #C08F38;
 }
 
 p,h1,h2,h3,h4,h5,h6{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 body{
@@ -24,6 +24,7 @@ h1{
     font-family: 'Fredericka the Great', cursive;
     color: $dark;
     text-align: center;
+    margin-top: 10px;
 }
 
 h2{
@@ -44,26 +45,23 @@ h2{
 
 .head {
     grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    
+    #nav {
+        width: 100%;
+        background-color: $dark;
+        position: sticky;
+        top:0;
+        
+        #hamburger {
+            display: none;
+        }
+    }
+    
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100vw;
-    background-color: $dark;
-}
 
-
-li a {
-    text-decoration: none;
-    display: block;
-    color: $pink;
-    text-align: center;
-    padding: .5em 1em;
-    border-bottom: $light 1px solid;
-}
 
 
 .content {
@@ -72,15 +70,16 @@ li a {
     width: auto;
     display: flex;
     flex-direction: column;
-    // justify-content: space-around;
     text-align: center;
-    // padding: 1.5em;
 
 }
 
 a {
     text-decoration: none;
-    color: $red;
+    display: block;
+    color: $pink;
+    text-align: center;
+    
 
     &:hover {
         color: $light;
@@ -103,7 +102,6 @@ a {
     }
 
 }
-
 
 div.ducks {
     height: 90%;
@@ -155,7 +153,6 @@ div.ducks {
 .container{
     display: flex;
     justify-content: center;
-    // align-content: center;
     flex-wrap: wrap;
     height: 100vh;
     width: 100vw;
@@ -172,8 +169,12 @@ div.ducks {
     .block {
         height: 200px;
         width: 320px;
-        margin: 20px;
+        margin-bottom: 20px;
         text-align: center;
+    }
+
+    .ed {
+        margin-bottom: 50px;
     }
 
 }
@@ -243,9 +244,6 @@ div.ducks {
 
 
 
-
-
-
 @import 'projects';
 @import 'catanimate';
 
@@ -280,6 +278,35 @@ div.ducks {
 //   }
 // }
 
+@media (max-width:499px) {
+    #nav {
+       
+        label {
+            display: inline-block;
+            color: $pink;
+            font-size: 1.5em;
+            padding: 10px;
+        }
+
+        ul {
+            display: none;
+
+            li {
+                display: block;
+                padding: .5em 1em;
+                border-bottom: $light 1px solid;
+            }
+            
+        }
+        // Toggle show/hide menu on checkbox click
+    
+        input:checked ~ ul {
+            display: block;
+        }
+        
+    }
+
+}
 @media (min-width: 500px) {
     .wrapper {
       grid-template-columns: 0.25fr 3fr 0.25fr;
@@ -289,21 +316,41 @@ div.ducks {
         ". ducks ."
         "footer footer footer";
     }
+
     div.ducks .name-box{
         font-size: 1em;
     }
 
-    li {
-        float: right;
-    }
-    
-    li a {
-        padding: .75em 1em;
-        border-left: 1px solid $light;
-        font-size: 1.2em;
-    }
-    
+    #nav {
+        width: 100%;
+        background-color: $dark;
 
+        .burger {
+            display: none;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        
+            li {
+                display: inline-block;
+                box-sizing: border-box;
+                float: right;
+                
+
+                a {
+                color: $pink;
+                text-align: center;
+                text-decoration: none;
+                border-left: 1px solid $light;
+                padding: .75em 1em;
+                }
+            }
+        }
+            
+    }
 }
 
 // large sized screen style changes

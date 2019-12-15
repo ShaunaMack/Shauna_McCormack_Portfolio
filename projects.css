@@ -27,7 +27,7 @@
 }
 
 .box .project .p4 {
-  background-image: url(./docs/Duckies_close.jpeg);
+  background-image: url(./docs/coding-cats.jpeg);
 }
 
 .box .project .p5 {
@@ -37,7 +37,7 @@
 
 .box .project .p6 {
   background-image: url();
-  background-color: #3C3C30;
+  background-color: #C88F90;
 }
 
 .box .project .change {
@@ -60,7 +60,7 @@
   height: 700px;
   -webkit-transform: skew(10deg);
           transform: skew(10deg);
-  background-color: #C88F90;
+  background-color: #3C3C30;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +69,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.box .project .final h2 {
+  color: #C88F90;
 }
 
 .box .project .description {

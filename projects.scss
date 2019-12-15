@@ -33,7 +33,7 @@ $peru: #C08F38;
         }
 
         .p4 {
-            background-image: url(./docs/Duckies_close.jpeg);
+            background-image: url(./docs/coding-cats.jpeg);
         }
 
         .p5 {
@@ -43,7 +43,7 @@ $peru: #C08F38;
 
         .p6 {
             background-image: url();
-            background-color: $dark;
+            background-color: $pink;
         }
 
 
@@ -65,10 +65,14 @@ $peru: #C08F38;
             width: 700px; 
             height: 700px;
             transform: skew(10deg);
-            background-color: $pink;
+            background-color: $dark;
             text-align: center;
             display: flex;
             flex-direction: column;
+            h2 {
+                color: $pink;
+            }
+            
         }		
 
         .description {

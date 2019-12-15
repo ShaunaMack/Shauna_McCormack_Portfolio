@@ -4,7 +4,7 @@
 }
 
 p, h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 body {
@@ -17,6 +17,7 @@ h1 {
   font-family: 'Fredericka the Great', cursive;
   color: #3C3C30;
   text-align: center;
+  margin-top: 10px;
 }
 
 h2 {
@@ -37,24 +38,23 @@ h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  width: 100vw;
+.head #nav {
+  width: 100%;
   background-color: #3C3C30;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-li a {
-  text-decoration: none;
-  display: block;
-  color: #C88F90;
-  text-align: center;
-  padding: .5em 1em;
-  border-bottom: #DFDCD9 1px solid;
+.head #nav #hamburger {
+  display: none;
 }
 
 .content {
@@ -75,7 +75,9 @@ li a {
 
 a {
   text-decoration: none;
-  color: #A84D45;
+  display: block;
+  color: #C88F90;
+  text-align: center;
 }
 
 a:hover {
@@ -177,8 +179,12 @@ div.ducks .name-box .inner-code {
 .container .block {
   height: 200px;
   width: 320px;
-  margin: 20px;
+  margin-bottom: 20px;
   text-align: center;
+}
+
+.container .ed {
+  margin-bottom: 50px;
 }
 
 .my-face .me-original {
@@ -278,7 +284,7 @@ div.ducks .name-box .inner-code {
 }
 
 .box .project .p4 {
-  background-image: url(./docs/Duckies_close.jpeg);
+  background-image: url(./docs/coding-cats.jpeg);
 }
 
 .box .project .p5 {
@@ -288,7 +294,7 @@ div.ducks .name-box .inner-code {
 
 .box .project .p6 {
   background-image: url();
-  background-color: #3C3C30;
+  background-color: #C88F90;
 }
 
 .box .project .change {
@@ -311,7 +317,7 @@ div.ducks .name-box .inner-code {
   height: 700px;
   -webkit-transform: skew(10deg);
           transform: skew(10deg);
-  background-color: #C88F90;
+  background-color: #3C3C30;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,6 +326,10 @@ div.ducks .name-box .inner-code {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.box .project .final h2 {
+  color: #C88F90;
 }
 
 .box .project .description {
@@ -539,6 +549,26 @@ div.ducks .name-box .inner-code {
           transform: rotate(-25deg);
 }
 
+@media (max-width: 499px) {
+  #nav label {
+    display: inline-block;
+    color: #C88F90;
+    font-size: 1.5em;
+    padding: 10px;
+  }
+  #nav ul {
+    display: none;
+  }
+  #nav ul li {
+    display: block;
+    padding: .5em 1em;
+    border-bottom: #DFDCD9 1px solid;
+  }
+  #nav input:checked ~ ul {
+    display: block;
+  }
+}
+
 @media (min-width: 500px) {
   .wrapper {
     -ms-grid-columns: 0.25fr 3fr 0.25fr;
@@ -548,13 +578,30 @@ div.ducks .name-box .inner-code {
   div.ducks .name-box {
     font-size: 1em;
   }
-  li {
+  #nav {
+    width: 100%;
+    background-color: #3C3C30;
+  }
+  #nav .burger {
+    display: none;
+  }
+  #nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  #nav ul li {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     float: right;
   }
-  li a {
-    padding: .75em 1em;
+  #nav ul li a {
+    color: #C88F90;
+    text-align: center;
+    text-decoration: none;
     border-left: 1px solid #DFDCD9;
-    font-size: 1.2em;
+    padding: .75em 1em;
   }
 }
 
