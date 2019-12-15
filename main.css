@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 10px;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #DFDCD9;
@@ -173,6 +177,7 @@ div.ducks .name-box .inner-code {
   height: 200px;
   width: 320px;
   margin: 20px;
+  text-align: center;
 }
 
 .my-face .me-original {
@@ -210,6 +215,37 @@ div.ducks .name-box .inner-code {
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   background-image: url(./docs/Rick.JPG);
+  opacity: 50%;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+  border: #A84D45 solid 2px;
+  border-radius: 20%;
+  margin-left: 100px;
+  margin-top: 10px;
+  color: #A84D45;
+}
+
+.button .btn-words {
+  font-size: 0.75em;
+}
+
+.button:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #C88F90;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #DFDCD9;
 }
 
 .circle {
@@ -217,6 +253,7 @@ div.ducks .name-box .inner-code {
   height: 200px;
   border-radius: 50%;
   background-color: #C88F90;
+  margin-left: 50px;
 }
 
 .circle .face {
@@ -334,19 +371,19 @@ div.ducks .name-box .inner-code {
           transform-origin: bottom;
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
-  -webkit-animation: a 1s infinite;
-          animation: a 1s infinite;
+  -webkit-animation: wag 1s infinite;
+          animation: wag 1s infinite;
   z-index: 1;
 }
 
-@-webkit-keyframes a {
+@-webkit-keyframes wag {
   50% {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
 }
 
-@keyframes a {
+@keyframes wag {
   50% {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
@@ -419,6 +456,43 @@ div.ducks .name-box .inner-code {
   right: 34px;
   -webkit-transform: rotate(-25deg);
           transform: rotate(-25deg);
+}
+
+.project .me-original {
+  width: 320px;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(./docs/myface.JPG);
+  margin: auto;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 10px 1px #000;
+          box-shadow: 0 0 10px 1px #000;
+}
+
+.project .change {
+  width: 0;
+  height: 200px;
+  overflow: hidden;
+  margin-left: -50px;
+  -webkit-transform: skew(-20deg);
+          transform: skew(-20deg);
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+}
+
+.project .me-original:hover .change {
+  width: 400px;
+}
+
+.project .cat-pic {
+  width: 400px;
+  height: 200px;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  background-image: url(./docs/Rick.JPG);
 }
 
 @media (min-width: 500px) {
