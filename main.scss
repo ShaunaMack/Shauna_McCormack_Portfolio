@@ -4,7 +4,6 @@ $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
 
-// _catanimate.scss
 
 *{
     margin: 0;
@@ -31,7 +30,6 @@ h2{
 
 .wrapper{
     display: grid;
-    grid-gap: 2em;
     grid-template-columns: 100%;
     grid-template-areas: 
     "header"
@@ -70,9 +68,9 @@ li a {
     width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    // justify-content: space-around;
     text-align: center;
-    padding: 1.5em;
+    // padding: 1.5em;
 
 }
 
@@ -93,6 +91,13 @@ a {
         opacity: 75%;
         border-radius: 5%;
     }
+    &:active {
+        color: $light;
+        background-color: $red;
+        opacity: 75%;
+        border-radius: 5%;
+    }
+
 }
 
 
@@ -146,10 +151,10 @@ div.ducks {
 .container{
     display: flex;
     justify-content: center;
-    align-content: center;
+    // align-content: center;
     flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 
     .box{
         height: 300px;
@@ -165,7 +170,6 @@ div.ducks {
         width: 320px;
         // border: 1px solid $red;
         margin: 20px;
-       
        
     }
 
@@ -206,9 +210,10 @@ div.ducks {
         background-image: url(./docs/Rick.JPG);
     }		
 }
+@import 'projects';
 
 @import 'catanimate';
-@import 'projects';
+
 
 // tick animation
 // .tick{

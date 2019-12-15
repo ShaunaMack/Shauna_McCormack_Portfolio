@@ -1,37 +1,80 @@
-.project .me-original {
-  width: 320px;
-  height: 200px;
+.box .project .original {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  height: 300px;
   overflow: hidden;
-  background-image: url(./docs/myface.JPG);
   margin: auto;
-  top: 0px;
+  top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-box-shadow: 0 0 10px 1px #000;
-          box-shadow: 0 0 10px 1px #000;
+  -webkit-box-shadow: 0 0 10px 1px #A84D45;
+          box-shadow: 0 0 10px 1px #A84D45;
 }
 
-.project .change {
+.box .project .p1 {
+  background-image: url(./docs/Main_Menu.png);
+}
+
+.box .project .p2 {
+  background-image: url(./docs/Helpsheets.png);
+}
+
+.box .project .p3 {
+  background-image: url(./docs/Jila.png);
+}
+
+.box .project .p4 {
+  background-image: url(./docs/Duckies_close.jpeg);
+}
+
+.box .project .p5 {
+  background-image: url();
+  background-color: #A84D45;
+}
+
+.box .project .p6 {
+  background-image: url();
+  background-color: #3C3C30;
+}
+
+.box .project .change {
   width: 0;
-  height: 200px;
+  height: 400px;
   overflow: hidden;
-  margin-left: -50px;
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
+  margin-left: -80px;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
 }
 
-.project .me-original:hover .change {
-  width: 400px;
+.box .project .original:hover .change {
+  width: 700px;
 }
 
-.project .cat-pic {
-  width: 400px;
-  height: 200px;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  background-image: url(./docs/Rick.JPG);
+.box .project .final {
+  width: 700px;
+  height: 700px;
+  -webkit-transform: skew(10deg);
+          transform: skew(10deg);
+  background-color: #C88F90;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.box .project .description {
+  width: 150px;
+  height: 150px;
+  margin-left: 170px;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=projects.css.map */

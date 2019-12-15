@@ -1,33 +1,83 @@
-.project {
-    .me-original {
-        width: 320px; 
-        height: 200px;
-        overflow: hidden;
-        background-image: url(./docs/myface.JPG);
-        margin: auto;
-        top: 0px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0 0 10px 1px #000;
+$dark: #3C3C30;
+$light: #DFDCD9;
+$pink: #C88F90;
+$red: #A84D45;
+$peru: #C08F38;
+
+.box{
+    .project {
+        
+        .original {
+            display: flex;
+            width: 300px; 
+            height: 300px;
+            overflow: hidden;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 10px 1px $red;
+        }
+
+        .p1 {
+            background-image: url(./docs/Main_Menu.png);
+        }
+
+        .p2 {
+            background-image: url(./docs/Helpsheets.png);
+        }
+
+        .p3 {
+            background-image: url(./docs/Jila.png);
+        }
+
+        .p4 {
+            background-image: url(./docs/Duckies_close.jpeg);
+        }
+
+        .p5 {
+            background-image: url();
+            background-color: $red;
+        }
+
+        .p6 {
+            background-image: url();
+            background-color: $dark;
+        }
+
+
+        .change {
+            width: 0; 
+            height: 400px;
+            overflow: hidden;
+            margin-left: -80px;
+            transform: skew(-10deg);
+            transition: width 1s ease;
+        }		
+
+        .original:hover .change {
+            width: 700px;
+        }
+
+        .final {
+            
+            width: 700px; 
+            height: 700px;
+            transform: skew(10deg);
+            background-color: $pink;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }		
+
+        .description {
+            width: 150px;
+            height: 150px;
+            margin-left: 170px;
+            margin-top: 50px;
+        }
+
     }
 
-    .change {
-        width: 0; 
-        height: 200px;
-        overflow: hidden;
-        margin-left: -50px;
-        transform: skew(-20deg);
-        transition: width 1s ease;
-    }		
-    .me-original:hover .change {
-        width: 400px;
-    }
-
-    .cat-pic {
-        width: 400px; 
-        height: 200px;
-        transform: skew(20deg);
-        background-image: url(./docs/Rick.JPG);
-    }		
 }
