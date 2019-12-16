@@ -47,21 +47,32 @@ h2{
     grid-area: header;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 60px;
     
     #nav {
         width: 100%;
         background-color: $dark;
-        position: sticky;
+        position: fixed;
         top:0;
+        color: $pink;
+        
         
         #hamburger {
             display: none;
+        }
+
+        a {
+            display: block;
+            color: $light;
         }
     }
     
 }
 
-
+.social-click {
+    height: 50px;
+    width: auto;
+}
 
 
 .content {
@@ -76,28 +87,23 @@ h2{
 
 a {
     text-decoration: none;
-    display: block;
-    color: $pink;
+    color: $red;
     text-align: center;
-    
 
     &:hover {
         color: $light;
-        background-color: $red;
-        opacity: 75%;
+        background-color: $pink;
         border-radius: 5%;
     }
     
     &:focus-within {
         background-color: $red;
         color: $light;
-        opacity: 75%;
         border-radius: 5%;
     }
     &:active {
         color: $light;
         background-color: $red;
-        opacity: 75%;
         border-radius: 5%;
     }
 
@@ -148,7 +154,7 @@ div.ducks {
     font-size: 0.75em;
     background-color: $dark;
     
- }
+}
 
 .container{
     display: flex;
@@ -169,8 +175,9 @@ div.ducks {
     .block {
         height: 200px;
         width: 320px;
-        margin-bottom: 20px;
+        margin: 20px;
         text-align: center;
+        
     }
 
     .ed {
@@ -246,44 +253,13 @@ div.ducks {
 
 @import 'projects';
 @import 'catanimate';
-
-
-// tick animation
-// .tick{
-//     margin-top: 40px;
-//     margin-left: 40%;
-//     position: fixed;
-//     margin-top: 70px;
-//     width: 12px;
-//     height:25px;
-//     border-top: 5px solid $red;
-//     border-right: 5px solid $red;
-//     transform-origin:left top;
-//     transform: scaleX(-1) rotate(140deg);
-//     animation: tick 1s ease infinite;
-// }
-
-// @keyframes tick{
-//   0%{
-//       width: 0px;
-//       height:0px;
-//   }
-//   50%{
-//       width: 12px;
-//       height:0px;
-//   }
-//   100%{ 
-//       width: 12px;
-//       height:25px;
-//   }
-// }
+ 
 
 @media (max-width:499px) {
     #nav {
        
         label {
             display: inline-block;
-            color: $pink;
             font-size: 1.5em;
             padding: 10px;
         }
@@ -322,9 +298,6 @@ div.ducks {
     }
 
     #nav {
-        width: 100%;
-        background-color: $dark;
-
         .burger {
             display: none;
         }
@@ -339,9 +312,7 @@ div.ducks {
                 box-sizing: border-box;
                 float: right;
                 
-
                 a {
-                color: $pink;
                 text-align: center;
                 text-decoration: none;
                 border-left: 1px solid $light;
