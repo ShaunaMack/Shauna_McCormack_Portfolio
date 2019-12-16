@@ -55,6 +55,10 @@
   width: 700px;
 }
 
+.box .project .original:active .change {
+  width: 700px;
+}
+
 .box .project .final {
   width: 700px;
   height: 700px;

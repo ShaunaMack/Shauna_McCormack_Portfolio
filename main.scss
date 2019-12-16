@@ -214,6 +214,10 @@ div.ducks {
         width: 400px;
     }
 
+    .me-original:active .change {
+        width: 400px;
+    }
+
     .cat-pic {
         width: 400px; 
         height: 200px;
@@ -335,6 +339,10 @@ div.ducks {
     }
     div.ducks .name-box{
         font-size: 1.3em;
+    }
+    .social-click {
+        height: 80px;
+        width: auto;
     }
 }
 

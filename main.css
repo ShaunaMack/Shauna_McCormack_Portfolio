@@ -223,6 +223,10 @@ div.ducks .name-box .inner-code {
   width: 400px;
 }
 
+.my-face .me-original:active .change {
+  width: 400px;
+}
+
 .my-face .cat-pic {
   width: 400px;
   height: 200px;
@@ -316,6 +320,10 @@ div.ducks .name-box .inner-code {
 }
 
 .box .project .original:hover .change {
+  width: 700px;
+}
+
+.box .project .original:active .change {
   width: 700px;
 }
 
@@ -614,6 +622,10 @@ div.ducks .name-box .inner-code {
   }
   div.ducks .name-box {
     font-size: 1.3em;
+  }
+  .social-click {
+    height: 80px;
+    width: auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
