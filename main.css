@@ -18,6 +18,7 @@ h1 {
   color: #3C3C30;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -31,7 +32,7 @@ h2 {
   display: grid;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-      grid-template-areas: "header" "content" "ducks" "footer";
+      grid-template-areas: "header" "content" "panel-image" "footer";
 }
 
 .head {
@@ -52,6 +53,7 @@ h2 {
   position: fixed;
   top: 0;
   color: #C88F90;
+  z-index: 4;
 }
 
 .head #nav #hamburger {
@@ -66,6 +68,39 @@ h2 {
 .social-click {
   height: 50px;
   width: auto;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.social-click:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@-webkit-keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+form {
+  line-height: 25px;
 }
 
 .content {
@@ -84,35 +119,35 @@ h2 {
   text-align: center;
 }
 
-a {
+#nav a, .ed a, .project a {
   text-decoration: none;
   color: #A84D45;
   text-align: center;
 }
 
-a:hover {
+#nav a:hover, .ed a:hover, .project a:hover {
   color: #DFDCD9;
   background-color: #C88F90;
   border-radius: 5%;
 }
 
-a:focus-within {
+#nav a:focus-within, .ed a:focus-within, .project a:focus-within {
   background-color: #A84D45;
   color: #DFDCD9;
   border-radius: 5%;
 }
 
-a:active {
+#nav a:active, .ed a:active, .project a:active {
   color: #DFDCD9;
   background-color: #A84D45;
   border-radius: 5%;
 }
 
-div.ducks {
+.panel-image {
   height: 90%;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: ducks;
+  grid-area: panel-image;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,13 +161,13 @@ div.ducks {
   margin: 0.5em;
 }
 
-div.ducks img {
+.panel-image img {
   width: 90%;
   border-radius: 5%;
   padding: 1em;
 }
 
-div.ducks .name-box {
+.panel-image .name-box {
   width: 90%;
   background-color: #C88F90;
   color: #DFDCD9;
@@ -147,7 +182,7 @@ div.ducks .name-box {
   border-radius: 5%;
 }
 
-div.ducks .name-box .inner-code {
+.panel-image .name-box .inner-code {
   color: #3C3C30;
 }
 
@@ -181,6 +216,19 @@ div.ducks .name-box .inner-code {
   border: 1px #3C3C30 solid;
   margin: 10px;
   background-color: #C88F90;
+  border-radius: 5%;
+}
+
+.container .box .overlay {
+  width: 85%;
+  min-width: 30%;
+  margin: 3% auto;
+  display: block;
+  padding: 2%;
+  height: 85%;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+  text-align: center;
 }
 
 .container .block {
@@ -266,6 +314,25 @@ div.ducks .name-box .inner-code {
   color: #DFDCD9;
 }
 
+.presenting {
+  background-image: url("./docs/presenting.JPG");
+  width: 100%;
+}
+
+.presenting .box {
+  background-color: #DFDCD9;
+  opacity: 75%;
+  padding: 1em;
+  border: 2px solid #A84D45;
+  outline: 1px dashed #DFDCD9;
+  outline-offset: -15px;
+  border-radius: 5%;
+}
+
+.box .project {
+  cursor: pointer;
+}
+
 .box .project .original {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,6 +347,7 @@ div.ducks .name-box .inner-code {
   right: 0;
   -webkit-box-shadow: 0 0 10px 1px #A84D45;
           box-shadow: 0 0 10px 1px #A84D45;
+  border-radius: 5%;
 }
 
 .box .project .p1 {
@@ -299,7 +367,7 @@ div.ducks .name-box .inner-code {
 }
 
 .box .project .p5 {
-  background-image: url();
+  background-image: url(./docs/dundee.JPG);
   background-color: #A84D45;
 }
 
@@ -317,9 +385,14 @@ div.ducks .name-box .inner-code {
           transform: skew(-10deg);
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
+  border-radius: 5%;
 }
 
 .box .project .original:hover .change {
+  width: 700px;
+}
+
+.box .project .original:focus-within .change {
   width: 700px;
 }
 
@@ -341,6 +414,7 @@ div.ducks .name-box .inner-code {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 5%;
 }
 
 .box .project .final h2 {
@@ -587,9 +661,9 @@ div.ducks .name-box .inner-code {
   .wrapper {
     -ms-grid-columns: 0.25fr 3fr 0.25fr;
         grid-template-columns: 0.25fr 3fr 0.25fr;
-        grid-template-areas: "header header header" ". content ." ". ducks ." "footer footer footer";
+        grid-template-areas: "header header header" ". content ." ". panel-image ." "footer footer footer";
   }
-  div.ducks .name-box {
+  .panel-image .name-box {
     font-size: 1em;
   }
   #nav .burger {
@@ -618,9 +692,9 @@ div.ducks .name-box .inner-code {
   .wrapper {
     -ms-grid-columns: 0.25fr 4fr 2fr 0.25fr;
         grid-template-columns: 0.25fr 4fr 2fr 0.25fr;
-        grid-template-areas: "header header header header" ". ducks content ." "footer footer footer footer";
+        grid-template-areas: "header header header header" ". panel-image content ." "footer footer footer footer";
   }
-  div.ducks .name-box {
+  .panel-image .name-box {
     font-size: 1.3em;
   }
   .social-click {

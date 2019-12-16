@@ -1,3 +1,7 @@
+.box .project {
+  cursor: pointer;
+}
+
 .box .project .original {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +16,7 @@
   right: 0;
   -webkit-box-shadow: 0 0 10px 1px #A84D45;
           box-shadow: 0 0 10px 1px #A84D45;
+  border-radius: 5%;
 }
 
 .box .project .p1 {
@@ -31,7 +36,7 @@
 }
 
 .box .project .p5 {
-  background-image: url();
+  background-image: url(./docs/dundee.JPG);
   background-color: #A84D45;
 }
 
@@ -49,9 +54,14 @@
           transform: skew(-10deg);
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
+  border-radius: 5%;
 }
 
 .box .project .original:hover .change {
+  width: 700px;
+}
+
+.box .project .original:focus-within .change {
   width: 700px;
 }
 
@@ -73,6 +83,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 5%;
 }
 
 .box .project .final h2 {

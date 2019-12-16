@@ -6,6 +6,7 @@ $peru: #C08F38;
 
 .box{
     .project {
+        cursor: pointer;
         
         .original {
             display: flex;
@@ -18,6 +19,7 @@ $peru: #C08F38;
             left: 0;
             right: 0;
             box-shadow: 0 0 10px 1px $red;
+            border-radius: 5%;
         }
 
         .p1 {
@@ -37,7 +39,7 @@ $peru: #C08F38;
         }
 
         .p5 {
-            background-image: url();
+            background-image: url(./docs/dundee.JPG);
             background-color: $red;
         }
 
@@ -54,12 +56,15 @@ $peru: #C08F38;
             margin-left: -80px;
             transform: skew(-10deg);
             transition: width 1s ease;
+            border-radius: 5%;
         }		
 
         .original:hover .change {
             width: 700px;
         }
-
+        .original:focus-within .change {
+            width:700px;
+        }
         .original:active .change {
             width: 700px;
         }
@@ -73,6 +78,8 @@ $peru: #C08F38;
             text-align: center;
             display: flex;
             flex-direction: column;
+            border-radius: 5%;
+
             h2 {
                 color: $pink;
             }
