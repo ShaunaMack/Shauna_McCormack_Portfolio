@@ -56,7 +56,7 @@ h2 {
   z-index: 4;
 }
 
-.head #nav #hamburger {
+.head #nav #menu_checkbox {
   display: none;
 }
 
@@ -646,21 +646,198 @@ form {
           transform: rotate(-25deg);
 }
 
+@-webkit-keyframes moveUpThenDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -27px;
+  }
+  100% {
+    top: -14px;
+  }
+}
+
+@keyframes moveUpThenDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -27px;
+  }
+  100% {
+    top: -14px;
+  }
+}
+
+@-webkit-keyframes shakeWhileMovingUp {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  25% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+@keyframes shakeWhileMovingUp {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  25% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+@-webkit-keyframes shakeWhileMovingDown {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  80% {
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(-3deg);
+            transform: rotateZ(-3deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
+@keyframes shakeWhileMovingDown {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+  80% {
+    -webkit-transform: rotateZ(3deg);
+            transform: rotateZ(3deg);
+  }
+  90% {
+    -webkit-transform: rotateZ(-3deg);
+            transform: rotateZ(-3deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+}
+
 @media (max-width: 499px) {
+  #menu_button {
+    width: 49px;
+    overflow: hidden;
+  }
+  #menu_label {
+    position: relative;
+    display: block;
+    height: 39px;
+    cursor: pointer;
+  }
+  #menu_label ul {
+    display: none;
+  }
+  #menu_label ul li {
+    display: block;
+    padding: .5em 1em;
+    border-bottom: #DFDCD9 1px solid;
+  }
+  #menu_label:before, #menu_label:after, #menu_text_bar {
+    position: absolute;
+    width: 39px;
+    height: 5px;
+    background-color: #DFDCD9;
+    z-index: 5;
+    margin-top: 10px;
+  }
+  #menu_label:before, #menu_label:after {
+    content: '';
+    -webkit-transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
+  }
+  #menu_label:before {
+    top: 0;
+  }
+  #menu_label:after {
+    top: 12px;
+  }
+  #menu_text_bar {
+    top: 24px;
+  }
+  #menu_text_bar:before {
+    content: 'MENU';
+    position: absolute;
+    top: 9px;
+    right: 0;
+    left: 0;
+    color: #C88F90;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+  }
+  #menu_checkbox:checked + #menu_label:before {
+    left: -49px;
+  }
+  #menu_checkbox:checked + #menu_label:after {
+    left: 49px;
+  }
+  #menu_checkbox:checked + #menu_label #menu_text_bar:before {
+    display: block;
+    -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+            animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  }
   #nav label {
     display: inline-block;
     font-size: 1.5em;
     padding: 10px;
   }
-  #nav ul {
+  #nav #nav-selectors {
     display: none;
+    width: 100%;
+    background-color: #3C3C30;
+    position: fixed;
+    top: 0;
+    color: #C88F90;
+    z-index: 4;
   }
-  #nav ul li {
+  #nav #nav-selectors li {
     display: block;
     padding: .5em 1em;
     border-bottom: #DFDCD9 1px solid;
   }
-  #nav input:checked ~ ul {
+  #nav #menu_button input:checked ~ ul {
     display: block;
   }
 }
@@ -673,9 +850,6 @@ form {
   }
   .panel-image .name-box {
     font-size: 1em;
-  }
-  #nav .burger {
-    display: none;
   }
   #nav ul {
     list-style-type: none;

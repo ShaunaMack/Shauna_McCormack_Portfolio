@@ -11,15 +11,19 @@
 <body>
     <header class="head">
         <nav id="nav">
-            <label class="burger" for="hamburger">&#9776;</label>
-            <input type="checkbox" id="hamburger"/>
-            <ul>
-                <li><a href="index.html">&#x1f3e0;</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-                <li><a href="talks.html">Talks</a></li>
-            </ul>
-        </nav>
+            <div id="menu_button">
+                <input type="checkbox" id="menu_checkbox">
+                <label for="menu_checkbox" id="menu_label">
+                  <div id="menu_text_bar"></div>
+                </label>
+                <ul id="nav-selectors">
+                    <li><a href="index.html">&#x1f3e0;</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="talks.html">Talks</a></li>
+                </ul>
+            </div>
+        </nav> 
     </header>
     
     
