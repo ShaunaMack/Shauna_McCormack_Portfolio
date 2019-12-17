@@ -190,8 +190,8 @@ form {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 100vh;
     width: 100vw;
+    height: auto;
     
 
     .box{
@@ -218,13 +218,16 @@ form {
     .block {
         height: 200px;
         width: 320px;
-        margin: 20px;
+        margin: 0 15px 15px 15px;
         text-align: center;
         
     }
 
     .ed {
         margin-bottom: 50px;
+    }
+    .language {
+        margin-bottom: 20px;
     }
 
 }
@@ -278,7 +281,7 @@ form {
     height: 20px;
     padding: 5px;
     border: $red solid 2px;
-    border-radius: 20%;
+    border-radius: 5%;
     margin-left: 100px;
     margin-top: 10px;
     color: $red;

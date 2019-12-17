@@ -38,17 +38,34 @@
                 <div class="box b3">
                     <section class="overlay">
                             <h2>Meet Up?</h2>
-                    <p>Fill this in if you want to meet for a coffee sometime</p>
+                    <p>Organise to meet Shauna for a coffee sometime</p>
                     <form action="submission.html" method="GET">
-                        <label for="username">Name:</label>
-                        <br>
-                                <input id="name" name="name" type="text" required minlength="3" maxlength="15">
+                        <label for="username">Name: </label>
+                            <input id="name" name="name" type="text" required minlength="3" maxlength="15">
                         <br>
                         <label for="pw">Mobile number:</label>
-                        <br>
-                       
                         <input id="pw" name="pw" type="password" required length="10">
                         <br>
+                        <section class="chat-selection">
+                            <label for="chat">What would you like to chat about?</label>
+                            <input list="chats" id="chat" name="chat">
+                            <datalist id="chats">
+                              <option value="presenting"></option>
+                              <option value="employment"></option>
+                              <option value="ducks"></option>
+                              <option value="cats"></option>
+                              <option value="other"></option>
+                            </datalist>
+                          </section>
+                        
+                        <br>
+                        <hr>
+        <section class="extra-info">
+          <label for="extra">Anything else you want to add?</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+        <hr>
                         <input type="submit" value="Submit">
                     </form>
                     </section>         
