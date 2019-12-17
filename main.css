@@ -219,7 +219,11 @@ form {
   border-radius: 5%;
 }
 
-.container .box .overlay {
+.container .b1, .container .b2, .container .b3 {
+  height: 400px;
+}
+
+.container .b1 .overlay, .container .b2 .overlay, .container .b3 .overlay {
   width: 85%;
   min-width: 30%;
   margin: 3% auto;
@@ -687,7 +691,6 @@ form {
   #nav ul li a {
     text-align: center;
     text-decoration: none;
-    border-left: 1px solid #DFDCD9;
     padding: .75em 1em;
   }
 }

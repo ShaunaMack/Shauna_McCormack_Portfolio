@@ -15,9 +15,9 @@
             <input type="checkbox" id="hamburger"/>
             <ul>
                 <li><a href="index.html">&#x1f3e0;</a></li>
-                <li><a href="about.html">&#129336;About</a></li>
-                <li><a href="project.html">&#128203;Projects</a></li>
-                <li><a href="talks.html">&#127908;Talks</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="talks.html">Talks</a></li>
             </ul>
         </nav>
     </header>
@@ -39,34 +39,33 @@
                     <section class="overlay">
                             <h2>Meet Up?</h2>
                     <p>Organise to meet Shauna for a coffee sometime</p>
-                    <form action="submission.html" method="GET">
+                    <hr>
+                    <br>
+                    <form action="mailto:shaunakatemack@gmail.com" method="POST" enctype="text/plain">
                         <label for="username">Name: </label>
-                            <input id="name" name="name" type="text" required minlength="3" maxlength="15">
+                            <input id="name" name="name" type="text" required minlength="2" maxlength="20">
                         <br>
-                        <label for="pw">Mobile number:</label>
-                        <input id="pw" name="pw" type="password" required length="10">
-                        <br>
+                        <label for="mob">Mobile number:</label>
+                            <input id="mob" name="mob" type="text" pattern="[0][0-9]{9}">
                         <section class="chat-selection">
                             <label for="chat">What would you like to chat about?</label>
+                            <br>
                             <input list="chats" id="chat" name="chat">
                             <datalist id="chats">
-                              <option value="presenting"></option>
-                              <option value="employment"></option>
-                              <option value="ducks"></option>
-                              <option value="cats"></option>
-                              <option value="other"></option>
+                                <option value="presenting"></option>
+                                <option value="employment"></option>
+                                <option value="ducks"></option>
+                                <option value="cats"></option>
+                                <option value="other"></option>
                             </datalist>
-                          </section>
-                        
-                        <br>
+                        </section>
+                        <section class="extra-info">
+                            <label for="extra">Anything else you want to add?</label>
+                            <br>
+                            <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+                        </section>
                         <hr>
-        <section class="extra-info">
-          <label for="extra">Anything else you want to add?</label>
-          <br>
-          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
-        </section>
-        <hr>
-                        <input type="submit" value="Submit">
+                            <input type="submit" value="Submit">
                     </form>
                     </section>         
                 </div>

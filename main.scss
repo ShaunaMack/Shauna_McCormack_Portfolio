@@ -202,6 +202,12 @@ form {
         background-color: $pink;
         border-radius: 5%;
 
+    }
+
+    .b1, .b2, .b3 {
+
+        height: 400px;
+
         .overlay{
             width: 85%;
             min-width: 30%;
@@ -214,6 +220,7 @@ form {
             text-align: center;
         }
     }
+    
 
     .block {
         height: 200px;
@@ -378,7 +385,7 @@ form {
                 a {
                 text-align: center;
                 text-decoration: none;
-                border-left: 1px solid $light;
+                // border-left: 1px solid $light;
                 padding: .75em 1em;
                 }
             }
