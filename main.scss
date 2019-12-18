@@ -266,6 +266,9 @@ form {
         width: 400px;
     }
 
+    .me-original:focus-within .change {
+        width: 400px;
+    }
     .me-original:active .change {
         width: 400px;
     }
@@ -326,8 +329,8 @@ form {
 @keyframes moveUpThenDown
 {
 0%{ top:0; }
-50%{ top:-27px;}
-100%{ top:-14px; }
+50%{ top:-35px;}
+100%{ top:-20px; }
 }
 
 @keyframes shakeWhileMovingUp
@@ -349,74 +352,55 @@ form {
  
 
 
-
-
-    
-    
-
-
 @media (max-width:499px) {
 
-    #menu_button
-    {
-    width: 49px;
-    overflow: hidden;
+    #menu_button {
+        width: 49px;
+        overflow: hidden;
     }
 
     #menu_label {
-    position: relative;
-    display: block;
-    height: 39px;
-    cursor: pointer;
+        position: relative;
+        display: block;
+        height: 39px;
+        cursor: pointer;
 
         ul {
             display: none;
-
-            li {
-                display: block;
-                padding: .5em 1em;
-                border-bottom: $light 1px solid;
-            }
             
         }
     }
    
-    #menu_label:before, #menu_label:after, #menu_text_bar
-    {
+    #menu_label:before, #menu_label:after, #menu_text_bar {
         position: absolute;
         width: 39px;
         height: 5px;
         background-color: $light;
         z-index: 5;
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
-    #menu_label:before, #menu_label:after
-    {
+    #menu_label:before, #menu_label:after {
         content: '';
         transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
     }
 
-    #menu_label:before
-    {
+    #menu_label:before {
         top: 0;
     }
 
-    #menu_label:after
-    {
+    #menu_label:after {
         top: 12px;
     }
 
-    #menu_text_bar
-    {
+    #menu_text_bar {
         top: 24px;
     }
 
-    #menu_text_bar:before
-    {
+    #menu_text_bar:before {
         content: 'MENU';
         position: absolute;
-        top: 9px;
+        top: 5px;
         right: 0;
         left: 0;
         color: $pink;
@@ -426,21 +410,19 @@ form {
         display: none;
     }
 
-    #menu_checkbox:checked + #menu_label:before
-    {
+    #menu_checkbox:checked + #menu_label:before {
         left: -49px;
     }
 
-    #menu_checkbox:checked + #menu_label:after
-    {
+    #menu_checkbox:checked + #menu_label:after {
         left: 49px;
     }
 
-    #menu_checkbox:checked + #menu_label #menu_text_bar:before
-    {
+    #menu_checkbox:checked + #menu_label #menu_text_bar:before {
         display: block;
         animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
     }
+
     #nav {
        
         label {

@@ -74,7 +74,7 @@ $peru: #C08F38;
             width: 700px; 
             height: 700px;
             transform: skew(10deg);
-            background-color: $dark;
+            // background-color: $dark;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -93,6 +93,13 @@ $peru: #C08F38;
             margin-top: 50px;
         }
 
+    }
+
+    .paw1 {
+        background-image: url(./docs/dundee-paw.png);
+        width: 700px;
+        height: auto;
+    
     }
 
 }

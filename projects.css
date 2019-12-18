@@ -74,7 +74,6 @@
   height: 700px;
   -webkit-transform: skew(10deg);
           transform: skew(10deg);
-  background-color: #3C3C30;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,5 +94,11 @@
   height: 150px;
   margin-left: 170px;
   margin-top: 50px;
+}
+
+.box .paw1 {
+  background-image: url(./docs/dundee-paw.png);
+  width: 700px;
+  height: auto;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -279,6 +279,10 @@ form {
   width: 400px;
 }
 
+.my-face .me-original:focus-within .change {
+  width: 400px;
+}
+
 .my-face .me-original:active .change {
   width: 400px;
 }
@@ -413,7 +417,6 @@ form {
   height: 700px;
   -webkit-transform: skew(10deg);
           transform: skew(10deg);
-  background-color: #3C3C30;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,6 +437,12 @@ form {
   height: 150px;
   margin-left: 170px;
   margin-top: 50px;
+}
+
+.box .paw1 {
+  background-image: url(./docs/dundee-paw.png);
+  width: 700px;
+  height: auto;
 }
 
 .circle {
@@ -651,10 +660,10 @@ form {
     top: 0;
   }
   50% {
-    top: -27px;
+    top: -35px;
   }
   100% {
-    top: -14px;
+    top: -20px;
   }
 }
 
@@ -663,10 +672,10 @@ form {
     top: 0;
   }
   50% {
-    top: -27px;
+    top: -35px;
   }
   100% {
-    top: -14px;
+    top: -20px;
   }
 }
 
@@ -768,18 +777,13 @@ form {
   #menu_label ul {
     display: none;
   }
-  #menu_label ul li {
-    display: block;
-    padding: .5em 1em;
-    border-bottom: #DFDCD9 1px solid;
-  }
   #menu_label:before, #menu_label:after, #menu_text_bar {
     position: absolute;
     width: 39px;
     height: 5px;
     background-color: #DFDCD9;
     z-index: 5;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   #menu_label:before, #menu_label:after {
     content: '';
@@ -798,7 +802,7 @@ form {
   #menu_text_bar:before {
     content: 'MENU';
     position: absolute;
-    top: 9px;
+    top: 5px;
     right: 0;
     left: 0;
     color: #C88F90;
