@@ -251,7 +251,7 @@ form {
 .talks {
         
     img {
-        width: 100%;
+        width: 100vw;
         // height: auto;
     }
 }
@@ -301,7 +301,7 @@ form {
 }
     
 
-.button {
+.cv-button {
     display: flex;
     justify-content: center;
     width: 100px;

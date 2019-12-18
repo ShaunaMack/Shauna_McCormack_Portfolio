@@ -260,7 +260,7 @@ form {
 }
 
 .talks img {
-  width: 100%;
+  width: 100vw;
 }
 
 .my-face .me-original {
@@ -309,7 +309,7 @@ form {
   opacity: 50%;
 }
 
-.button {
+.cv-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,11 +326,11 @@ form {
   color: #A84D45;
 }
 
-.button .btn-words {
+.cv-button .btn-words {
   font-size: 0.75em;
 }
 
-.button:hover {
+.cv-button:hover {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #C88F90;
@@ -430,6 +430,7 @@ form {
   height: 700px;
   -webkit-transform: skew(10deg);
           transform: skew(10deg);
+  background-color: #3C3C30;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -439,6 +440,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 5%;
+  background-repeat: no-repeat;
 }
 
 .box .project .final h2 {
@@ -446,16 +448,18 @@ form {
 }
 
 .box .project .description {
-  width: 150px;
+  width: 210px;
   height: 150px;
-  margin-left: 170px;
-  margin-top: 50px;
+  margin-left: 160px;
+  margin-top: 150px;
 }
 
-.box .paw1 {
+.box .project .paw1 {
+  background-image: url(./docs/margot-paw.png);
+}
+
+.box .project .paw2 {
   background-image: url(./docs/dundee-paw.png);
-  width: 700px;
-  height: auto;
 }
 
 .circle {

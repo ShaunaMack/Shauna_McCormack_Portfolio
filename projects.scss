@@ -74,11 +74,12 @@ $peru: #C08F38;
             width: 700px; 
             height: 700px;
             transform: skew(10deg);
-            // background-color: $dark;
+            background-color: $dark;
             text-align: center;
             display: flex;
             flex-direction: column;
             border-radius: 5%;
+            background-repeat: no-repeat;
 
             h2 {
                 color: $pink;
@@ -87,19 +88,22 @@ $peru: #C08F38;
         }		
 
         .description {
-            width: 150px;
+            width: 210px;
             height: 150px;
-            margin-left: 170px;
-            margin-top: 50px;
+            margin-left: 160px;
+            margin-top: 150px;
+        }
+
+        
+        .paw1 {
+            background-image: url(./docs/margot-paw.png);
+        }
+    
+        .paw2 {
+            background-image: url(./docs/dundee-paw.png);
         }
 
     }
 
-    .paw1 {
-        background-image: url(./docs/dundee-paw.png);
-        width: 700px;
-        height: auto;
     
-    }
-
 }
