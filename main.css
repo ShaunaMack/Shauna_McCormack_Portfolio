@@ -235,6 +235,15 @@ form {
   text-align: center;
 }
 
+.container .b1 .overlay button, .container .b2 .overlay button, .container .b3 .overlay button {
+  border: none;
+}
+
+.container .b1 .overlay img, .container .b2 .overlay img, .container .b3 .overlay img {
+  width: 75%;
+  height: auto;
+}
+
 .container .block {
   height: 200px;
   width: 320px;
@@ -248,6 +257,10 @@ form {
 
 .container .language {
   margin-bottom: 20px;
+}
+
+.talks img {
+  width: 100%;
 }
 
 .my-face .me-original {
