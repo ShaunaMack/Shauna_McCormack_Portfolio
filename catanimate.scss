@@ -117,22 +117,23 @@ $peru: #C08F38;
 
     .tail{
         position: relative;
-        height: 75px;
-        width: 10px;
-        background-color: $light;
-        border-radius: 250px;
+        height: 70px;
+        width: 70px;
+        box-shadow: 15px 15px 0 0 $light;
+        border-radius: 50%;
         bottom: 35px;
-        left: 15px;
+        left: -20px;
         transform-origin: bottom;
-        transform: rotate(-35deg);
-        animation:wag 1s infinite;
-        z-index: 1;
+        transform: rotate(90deg);
+        animation:wag 2s infinite;
+        z-index: 4;
     }
 }
 
 @keyframes wag{
     50%{
-        transform: rotate(-90deg);
+        transform: rotate(220deg);
+
     }
 }
 

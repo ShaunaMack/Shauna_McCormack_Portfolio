@@ -558,32 +558,33 @@ form {
 
 .circle .tail {
   position: relative;
-  height: 75px;
-  width: 10px;
-  background-color: #DFDCD9;
-  border-radius: 250px;
+  height: 70px;
+  width: 70px;
+  -webkit-box-shadow: 15px 15px 0 0 #DFDCD9;
+          box-shadow: 15px 15px 0 0 #DFDCD9;
+  border-radius: 50%;
   bottom: 35px;
-  left: 15px;
+  left: -20px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
-  -webkit-transform: rotate(-35deg);
-          transform: rotate(-35deg);
-  -webkit-animation: wag 1s infinite;
-          animation: wag 1s infinite;
-  z-index: 1;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation: wag 2s infinite;
+          animation: wag 2s infinite;
+  z-index: 4;
 }
 
 @-webkit-keyframes wag {
   50% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -webkit-transform: rotate(220deg);
+            transform: rotate(220deg);
   }
 }
 
 @keyframes wag {
   50% {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
+    -webkit-transform: rotate(220deg);
+            transform: rotate(220deg);
   }
 }
 
