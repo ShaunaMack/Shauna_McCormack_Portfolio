@@ -99,10 +99,6 @@ h2 {
   }
 }
 
-form {
-  line-height: 25px;
-}
-
 .content {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -233,6 +229,14 @@ form {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
   text-align: center;
+}
+
+.container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
+  line-height: 25px;
+}
+
+.container .b1 .overlay form input, .container .b2 .overlay form input, .container .b3 .overlay form input {
+  border: 1px solid #3C3C30;
 }
 
 .container .b1 .overlay button, .container .b2 .overlay button, .container .b3 .overlay button {
@@ -455,11 +459,58 @@ form {
 }
 
 .box .project .paw1 {
-  background-image: url(./docs/margot-paw.png);
+  background-image: url(./docs/paws/ricky-paw.png);
+}
+
+.box .project .paw1 .description {
+  margin-left: 160px;
+  margin-top: 10px;
 }
 
 .box .project .paw2 {
-  background-image: url(./docs/dundee-paw.png);
+  background-image: url(./docs/paws/gigi-paw.png);
+}
+
+.box .project .paw2 .description {
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.box .project .paw3 {
+  background-image: url(./docs/paws/monkey-paw.png);
+  top: 100px;
+}
+
+.box .project .paw3 .description {
+  margin-left: 160px;
+  margin-top: 150px;
+}
+
+.box .project .paw4 {
+  background-image: url(./docs/paws/margot-paw.png);
+}
+
+.box .project .paw4 .description {
+  margin-left: 160px;
+  margin-top: 200px;
+}
+
+.box .project .paw5 {
+  background-image: url(./docs/paws/duncan-paw.png);
+}
+
+.box .project .paw5 .description {
+  margin-left: 160px;
+  margin-top: 10px;
+}
+
+.box .project .paw6 {
+  background-image: url(./docs/paws/ricky-paw.png);
+}
+
+.box .project .paw6 .description {
+  margin-left: 160px;
+  margin-top: 80px;
 }
 
 .circle {
@@ -888,6 +939,7 @@ form {
     text-align: center;
     text-decoration: none;
     padding: .75em 1em;
+    height: 25px;
   }
 }
 

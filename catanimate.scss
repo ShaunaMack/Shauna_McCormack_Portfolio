@@ -4,14 +4,13 @@ $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
 
+// background circle surrounding cat
 .circle{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: #C88F90;
     margin-left: 50px;
-
-
 
     .face{
         position: absolute;
@@ -23,10 +22,8 @@ $peru: #C08F38;
         border: 1px solid transparent;
         background-color: $light;
     
-
         .nose{
             background-color: $red;
-            // display: inline-block;
             height: 7px;
             margin: 0 50px;
             position: relative;
@@ -133,7 +130,6 @@ $peru: #C08F38;
 @keyframes wag{
     50%{
         transform: rotate(220deg);
-
     }
 }
 

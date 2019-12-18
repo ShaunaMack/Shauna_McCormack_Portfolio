@@ -99,10 +99,57 @@
 }
 
 .box .project .paw1 {
-  background-image: url(./docs/margot-paw.png);
+  background-image: url(./docs/paws/ricky-paw.png);
+}
+
+.box .project .paw1 .description {
+  margin-left: 160px;
+  margin-top: 10px;
 }
 
 .box .project .paw2 {
-  background-image: url(./docs/dundee-paw.png);
+  background-image: url(./docs/paws/gigi-paw.png);
+}
+
+.box .project .paw2 .description {
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.box .project .paw3 {
+  background-image: url(./docs/paws/monkey-paw.png);
+  top: 100px;
+}
+
+.box .project .paw3 .description {
+  margin-left: 160px;
+  margin-top: 150px;
+}
+
+.box .project .paw4 {
+  background-image: url(./docs/paws/margot-paw.png);
+}
+
+.box .project .paw4 .description {
+  margin-left: 160px;
+  margin-top: 200px;
+}
+
+.box .project .paw5 {
+  background-image: url(./docs/paws/duncan-paw.png);
+}
+
+.box .project .paw5 .description {
+  margin-left: 160px;
+  margin-top: 10px;
+}
+
+.box .project .paw6 {
+  background-image: url(./docs/paws/ricky-paw.png);
+}
+
+.box .project .paw6 .description {
+  margin-left: 160px;
+  margin-top: 80px;
 }
 /*# sourceMappingURL=projects.css.map */

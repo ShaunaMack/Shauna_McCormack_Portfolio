@@ -4,12 +4,13 @@ $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
 
-
+// reset any default settings in browser
 *{
     margin: 0;
     padding: 0;
 }
 
+// general rules for lots of tags
 p,h1,h2,h3,h4,h5,h6{
     margin-bottom: 5px;
 }
@@ -20,6 +21,7 @@ body{
     color: $dark;
 }
 
+// rules for headings
 h1{
     font-family: 'Fredericka the Great', cursive;
     color: $dark;
@@ -34,6 +36,7 @@ h2{
     text-align: center;
 }
 
+// general grid layout -mobile first for index page
 .wrapper{
     display: grid;
     grid-template-columns: 100%;
@@ -44,6 +47,7 @@ h2{
     "footer";
 }
 
+// rules for header for all screen sizes
 .head {
     grid-area: header;
     display: flex;
@@ -71,7 +75,7 @@ h2{
 }
 
 
-
+// links to social media via icons
 .social-click {
     height: 50px;
     width: auto;
@@ -87,22 +91,15 @@ h2{
     }
 }
 
+// social media icon animation
 @keyframes flyin {
     to { 
       filter: blur(0);
       transform: scale(1);
       opacity: 1;
     }
-    
 }
-
-form {
-    line-height: 25px;
-  }
-  .overlay {
   
-  }
-
 .content {
     grid-area: content;
     height: 100%;
@@ -112,6 +109,7 @@ form {
     text-align: center;
 }
 
+// styles for selecting links
 #nav, .ed, .project{
     a {
         text-decoration: none;
@@ -134,13 +132,12 @@ form {
             background-color: $red;
             border-radius: 5%;
         }
-
     }
 }
 
+// index page duck and "code" styling
 .panel-image {
     height: 90%;
-    // width: auto;
     grid-area: panel-image;
     display: flex;
     flex-direction: column;
@@ -172,7 +169,8 @@ form {
         }
     }
 }
-  
+
+// footer style for all pages
 .footer {
     position: fixed;
     left: 0;
@@ -185,6 +183,7 @@ form {
     
 }
 
+// flex box containers for the different pages with various sizes (per page)
 .container{
     display: flex;
     justify-content: center;
@@ -207,7 +206,7 @@ form {
 
         height: 400px;
         
-
+// inner section for easier viewing of text on talks page and the form
         .overlay {
             width: 85%;
             min-width: 30%;
@@ -218,6 +217,14 @@ form {
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 40px;
             text-align: center;
+
+            //format of form on talk page
+            form {
+                line-height: 25px;
+                input {
+                border: 1px solid $dark;
+                }
+            }
 
             button {
                 border: none;
@@ -230,13 +237,11 @@ form {
         }
     }
     
-
     .block {
         height: 200px;
         width: 320px;
         margin: 0 15px 15px 15px;
         text-align: center;
-        
     }
 
     .ed {
@@ -248,15 +253,14 @@ form {
 
 }
 
-.talks {
-        
+// enlarge pictures in case someone wants a closer look at images on talks page
+.talks {   
     img {
         width: 100vw;
-        // height: auto;
     }
 }
 
-// about me photo changer
+// about me photo changer (Shauna to Ricky the cat)
 
 .my-face {
     .me-original {
@@ -280,10 +284,11 @@ form {
         transform: skew(-20deg);
         transition: width 1s ease;
     }		
+
     .me-original:hover .change {
         width: 400px;
     }
-
+// attempt to make clickable on the phone
     .me-original:focus-within .change {
         width: 400px;
     }
@@ -300,7 +305,7 @@ form {
     }		
 }
     
-
+// button to open Shauna's CV
 .cv-button {
     display: flex;
     justify-content: center;
@@ -340,10 +345,12 @@ form {
     }
 }
 
-
+// import the other SASS files to animate cat and to animate images on project page
 @import 'projects';
 @import 'catanimate';
 
+
+// animations for burger menu
 @keyframes moveUpThenDown
 {
 0%{ top:0; }
@@ -369,7 +376,7 @@ form {
 }
  
 
-
+// burger menu rule for small screen devices
 @media (max-width:499px) {
 
     #menu_button {
@@ -385,7 +392,6 @@ form {
 
         ul {
             display: none;
-            
         }
     }
    
@@ -478,7 +484,7 @@ form {
 
 
        
-
+// rules to change layout for medium sized screen like iPad
 @media (min-width: 500px) {
     .wrapper {
       grid-template-columns: 0.25fr 3fr 0.25fr;
@@ -508,8 +514,8 @@ form {
                 a {
                 text-align: center;
                 text-decoration: none;
-                // border-left: 1px solid $light;
                 padding: .75em 1em;
+                height: 25px;
                 }
             }
         }
@@ -518,6 +524,7 @@ form {
 }
 
 // large sized screen style changes
+// some styles inherited from mobile and from medium sized device rules
 @media (min-width: 700px) {
     .wrapper {
         grid-template-columns: 0.25fr 4fr 2fr 0.25fr;

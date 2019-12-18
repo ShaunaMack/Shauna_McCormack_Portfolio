@@ -48,7 +48,6 @@ $peru: #C08F38;
             background-color: $pink;
         }
 
-
         .change {
             width: 0; 
             height: 400px;
@@ -70,7 +69,6 @@ $peru: #C08F38;
         }
 
         .final {
-            
             width: 700px; 
             height: 700px;
             transform: skew(10deg);
@@ -84,7 +82,6 @@ $peru: #C08F38;
             h2 {
                 color: $pink;
             }
-            
         }		
 
         .description {
@@ -93,16 +90,51 @@ $peru: #C08F38;
             margin-left: 160px;
             margin-top: 150px;
         }
-
         
         .paw1 {
-            background-image: url(./docs/margot-paw.png);
+            background-image: url(./docs/paws/ricky-paw.png);
+            .description {
+                margin-left: 160px;
+                margin-top: 10px;
+            }
         }
     
         .paw2 {
-            background-image: url(./docs/dundee-paw.png);
+            background-image: url(./docs/paws/gigi-paw.png);
+            .description {
+                margin-left: 150px;
+                margin-top: 80px;
+            }
         }
-
+        .paw3 {
+            background-image: url(./docs/paws/monkey-paw.png);
+            top: 100px;
+            .description {
+                margin-left: 160px;
+                margin-top: 150px;
+            }
+        }
+        .paw4 {
+            background-image: url(./docs/paws/margot-paw.png);
+            .description {
+                margin-left: 160px;
+                margin-top: 200px;
+            }
+        }
+        .paw5 {
+            background-image: url(./docs/paws/duncan-paw.png);
+            .description {
+                margin-left: 160px;
+                margin-top: 10px;
+            }
+        }
+        .paw6 {
+            background-image: url(./docs/paws/ricky-paw.png);
+            .description {
+                margin-left: 160px;
+                margin-top: 80px;
+            }
+        }
     }
 
     
