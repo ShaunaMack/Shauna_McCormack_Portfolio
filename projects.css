@@ -45,111 +45,113 @@
   background-color: #C88F90;
 }
 
-.box .project .change {
-  width: 0;
-  height: 400px;
-  overflow: hidden;
-  margin-left: -80px;
-  -webkit-transform: skew(-10deg);
-          transform: skew(-10deg);
-  -webkit-transition: width 1s ease;
-  transition: width 1s ease;
-  border-radius: 5%;
+@media (max-width: 499px) {
+  a .description {
+    margin-right: 20px;
+    background-color: #3C3C30;
+    color: #DFDCD9;
+    font-size: 0.75em;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    margin-left: 150px;
+    margin-top: 150px;
+    opacity: 85%;
+    padding: 5px;
+    border-radius: 5%;
+  }
 }
 
-.box .project .original:hover .change {
-  width: 700px;
-}
-
-.box .project .original:focus-within .change {
-  width: 700px;
-}
-
-.box .project .original:active .change {
-  width: 700px;
-}
-
-.box .project .final {
-  width: 700px;
-  height: 700px;
-  -webkit-transform: skew(10deg);
-          transform: skew(10deg);
-  background-color: #3C3C30;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 5%;
-  background-repeat: no-repeat;
-}
-
-.box .project .final h2 {
-  color: #C88F90;
-}
-
-.box .project .description {
-  width: 210px;
-  height: 150px;
-  margin-left: 160px;
-  margin-top: 150px;
-}
-
-.box .project .paw1 {
-  background-image: url(./docs/paws/ricky-paw.png);
-}
-
-.box .project .paw1 .description {
-  margin-left: 160px;
-  margin-top: 10px;
-}
-
-.box .project .paw2 {
-  background-image: url(./docs/paws/gigi-paw.png);
-}
-
-.box .project .paw2 .description {
-  margin-left: 150px;
-  margin-top: 80px;
-}
-
-.box .project .paw3 {
-  background-image: url(./docs/paws/monkey-paw.png);
-  top: 100px;
-}
-
-.box .project .paw3 .description {
-  margin-left: 160px;
-  margin-top: 150px;
-}
-
-.box .project .paw4 {
-  background-image: url(./docs/paws/margot-paw.png);
-}
-
-.box .project .paw4 .description {
-  margin-left: 160px;
-  margin-top: 200px;
-}
-
-.box .project .paw5 {
-  background-image: url(./docs/paws/duncan-paw.png);
-}
-
-.box .project .paw5 .description {
-  margin-left: 160px;
-  margin-top: 10px;
-}
-
-.box .project .paw6 {
-  background-image: url(./docs/paws/ricky-paw.png);
-}
-
-.box .project .paw6 .description {
-  margin-left: 160px;
-  margin-top: 80px;
+@media (min-width: 500px) {
+  .box .project .change {
+    width: 0;
+    height: 400px;
+    overflow: hidden;
+    margin-left: -80px;
+    -webkit-transform: skew(-10deg);
+            transform: skew(-10deg);
+    -webkit-transition: width 1s ease;
+    transition: width 1s ease;
+    border-radius: 5%;
+  }
+  .box .project .original:hover .change {
+    width: 700px;
+  }
+  .box .project .original:focus-within .change {
+    width: 700px;
+  }
+  .box .project .original:active .change {
+    width: 700px;
+  }
+  .box .project .final {
+    width: 700px;
+    height: 700px;
+    -webkit-transform: skew(10deg);
+            transform: skew(10deg);
+    background-color: #3C3C30;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 5%;
+    background-repeat: no-repeat;
+  }
+  .box .project .final h2 {
+    color: #C88F90;
+  }
+  .box .project .description {
+    width: 210px;
+    height: 150px;
+    margin-left: 160px;
+    margin-top: 150px;
+    background-color: none;
+  }
+  .box .project .paw1 {
+    background-image: url(./docs/paws/ricky-paw.png);
+  }
+  .box .project .paw1 .description {
+    margin-left: 160px;
+    margin-top: 10px;
+  }
+  .box .project .paw2 {
+    background-image: url(./docs/paws/gigi-paw.png);
+  }
+  .box .project .paw2 .description {
+    margin-left: 150px;
+    margin-top: 80px;
+  }
+  .box .project .paw3 {
+    background-image: url(./docs/paws/monkey-paw.png);
+    top: 100px;
+  }
+  .box .project .paw3 .description {
+    margin-left: 160px;
+    margin-top: 150px;
+  }
+  .box .project .paw4 {
+    background-image: url(./docs/paws/margot-paw.png);
+  }
+  .box .project .paw4 .description {
+    margin-left: 160px;
+    margin-top: 200px;
+  }
+  .box .project .paw5 {
+    background-image: url(./docs/paws/duncan-paw.png);
+  }
+  .box .project .paw5 .description {
+    margin-left: 160px;
+    margin-top: 10px;
+  }
+  .box .project .paw6 {
+    background-image: url(./docs/paws/ricky-paw.png);
+  }
+  .box .project .paw6 .description {
+    margin-left: 160px;
+    margin-top: 80px;
+  }
 }
 /*# sourceMappingURL=projects.css.map */

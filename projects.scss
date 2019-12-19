@@ -47,95 +47,120 @@ $peru: #C08F38;
             background-image: url();
             background-color: $pink;
         }
+       
+    }
+}
 
-        .change {
-            width: 0; 
-            height: 400px;
-            overflow: hidden;
-            margin-left: -80px;
-            transform: skew(-10deg);
-            transition: width 1s ease;
-            border-radius: 5%;
-        }		
-
-        .original:hover .change {
-            width: 700px;
-        }
-        .original:focus-within .change {
-            width:700px;
-        }
-        .original:active .change {
-            width: 700px;
-        }
-
-        .final {
-            width: 700px; 
-            height: 700px;
-            transform: skew(10deg);
-            background-color: $dark;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            border-radius: 5%;
-            background-repeat: no-repeat;
-
-            h2 {
-                color: $pink;
-            }
-        }		
-
+@media (max-width: 499px) {
+    a {
         .description {
-            width: 210px;
+            margin-right: 20px;
+            background-color: $dark;
+            color: $light;
+            font-size: 0.75em;
+            text-align: center;
+            width: 150px;
             height: 150px;
-            margin-left: 160px;
+            margin-left: 150px;
             margin-top: 150px;
+            opacity: 85%;
+            padding: 5px;
+            border-radius: 5%;
         }
-        
-        .paw1 {
-            background-image: url(./docs/paws/ricky-paw.png);
-            .description {
-                margin-left: 160px;
-                margin-top: 10px;
+    }
+}
+
+@media (min-width: 500px) {
+    .box{
+        .project {
+            .change {
+                width: 0; 
+                height: 400px;
+                overflow: hidden;
+                margin-left: -80px;
+                transform: skew(-10deg);
+                transition: width 1s ease;
+                border-radius: 5%;
+            }		
+
+            .original:hover .change {
+                width: 700px;
             }
-        }
-    
-        .paw2 {
-            background-image: url(./docs/paws/gigi-paw.png);
-            .description {
-                margin-left: 150px;
-                margin-top: 80px;
+            .original:focus-within .change {
+                width:700px;
             }
-        }
-        .paw3 {
-            background-image: url(./docs/paws/monkey-paw.png);
-            top: 100px;
+            .original:active .change {
+                width: 700px;
+            }
+
+            .final {
+                width: 700px; 
+                height: 700px;
+                transform: skew(10deg);
+                background-color: $dark;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                border-radius: 5%;
+                background-repeat: no-repeat;
+
+                h2 {
+                    color: $pink;
+                }
+            }		
+
             .description {
+                width: 210px;
+                height: 150px;
                 margin-left: 160px;
                 margin-top: 150px;
+                background-color: none;
             }
-        }
-        .paw4 {
-            background-image: url(./docs/paws/margot-paw.png);
-            .description {
-                margin-left: 160px;
-                margin-top: 200px;
+            
+            .paw1 {
+                background-image: url(./docs/paws/ricky-paw.png);
+                .description {
+                    margin-left: 160px;
+                    margin-top: 10px;
+                }
             }
-        }
-        .paw5 {
-            background-image: url(./docs/paws/duncan-paw.png);
-            .description {
-                margin-left: 160px;
-                margin-top: 10px;
+
+            .paw2 {
+                background-image: url(./docs/paws/gigi-paw.png);
+                .description {
+                    margin-left: 150px;
+                    margin-top: 80px;
+                }
             }
-        }
-        .paw6 {
-            background-image: url(./docs/paws/ricky-paw.png);
-            .description {
-                margin-left: 160px;
-                margin-top: 80px;
+            .paw3 {
+                background-image: url(./docs/paws/monkey-paw.png);
+                top: 100px;
+                .description {
+                    margin-left: 160px;
+                    margin-top: 150px;
+                }
+            }
+            .paw4 {
+                background-image: url(./docs/paws/margot-paw.png);
+                .description {
+                    margin-left: 160px;
+                    margin-top: 200px;
+                }
+            }
+            .paw5 {
+                background-image: url(./docs/paws/duncan-paw.png);
+                .description {
+                    margin-left: 160px;
+                    margin-top: 10px;
+                }
+            }
+            .paw6 {
+                background-image: url(./docs/paws/ricky-paw.png);
+                .description {
+                    margin-left: 160px;
+                    margin-top: 80px;
+                }
             }
         }
     }
-
-    
 }
