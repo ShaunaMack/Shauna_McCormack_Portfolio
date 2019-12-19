@@ -253,6 +253,11 @@ h2 {
   border-radius: 40px;
 }
 
+.container .b1 .overlay button img, .container .b2 .overlay button img, .container .b3 .overlay button img {
+  width: 75%;
+  height: auto;
+}
+
 .container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
   text-align: left;
   line-height: 25px;
@@ -293,11 +298,6 @@ h2 {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   color: #DFDCD9;
-}
-
-.container .b1 .overlay img, .container .b2 .overlay img, .container .b3 .overlay img {
-  width: 75%;
-  height: auto;
 }
 
 .container .block {

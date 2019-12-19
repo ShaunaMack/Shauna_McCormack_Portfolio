@@ -225,6 +225,13 @@ h2{
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 40px;
 
+            button {
+                img {
+                width: 75%;
+                height: auto;
+                }
+            }
+
             //format of form on talk page
             form {
                 text-align: left;
@@ -267,10 +274,7 @@ h2{
                 }
             }
 
-            img {
-                width: 75%;
-                height: auto;
-            }
+            
         }
     }
     
@@ -385,6 +389,7 @@ h2{
         outline-offset: -15px;
         border-radius: 5%;
     }
+
 }
 
 // import the other SASS files to animate cat and to animate images on project page
