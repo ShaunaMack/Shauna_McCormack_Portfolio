@@ -48,15 +48,25 @@ The contact form on the Talks page allows the user to enter some details and sen
 
 There are several other external links highlighted in yellow below.
 
-<img src="" alt="hand drawn site map visualisation">
+<img src="./docs/site-map.jpeg" alt="hand drawn site map visualisation">
 
 ## Screenshots
 
-Index Page
+### Index Page
+<img src="./docs/index-desktop.png" alt="">
+<img src="./docs/index-tabmob.png" alt="">
 
+### About Page
+<img src="./docs/about-desktop.png" alt="">
+<img src="./docs/about-tabmob.png" alt="">
 
+### Project Page
+<img src="./docs/project-desktop.png" alt="">
+<img src="./docs/project-tabmob.png" alt="">
 
-
+### Talks Page
+<img src="./docs/talks-desktop.png" alt="">
+<img src="./docs/talks-tabmob.png" alt="">
 
 ## Tech stack
 
