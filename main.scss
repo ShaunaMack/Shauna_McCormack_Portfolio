@@ -38,7 +38,7 @@ h2{
     font-family: 'Fredericka the Great', cursive;
     color: $red;
     text-align: center;
-    animation: blinker 1.5s linear infinite;
+    animation: blinker 1.5s linear;
 }
 
 // h1 animation
@@ -227,7 +227,7 @@ h2{
 
             button {
                 img {
-                width: 75%;
+                width: 150px;
                 height: auto;
                 }
             }

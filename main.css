@@ -32,8 +32,8 @@ h2 {
   font-family: 'Fredericka the Great', cursive;
   color: #A84D45;
   text-align: center;
-  -webkit-animation: blinker 1.5s linear infinite;
-          animation: blinker 1.5s linear infinite;
+  -webkit-animation: blinker 1.5s linear;
+          animation: blinker 1.5s linear;
 }
 
 @-webkit-keyframes flyin {
@@ -254,7 +254,7 @@ h2 {
 }
 
 .container .b1 .overlay button img, .container .b2 .overlay button img, .container .b3 .overlay button img {
-  width: 75%;
+  width: 150px;
   height: auto;
 }
 
@@ -479,8 +479,7 @@ h2 {
     text-align: center;
     width: 150px;
     height: 150px;
-    margin-left: 150px;
-    margin-top: 150px;
+    margin: 120px 120px;
     opacity: 85%;
     padding: 5px;
     border-radius: 5%;
