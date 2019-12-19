@@ -51,6 +51,7 @@ $peru: #C08F38;
     }
 }
 
+
 @media (max-width: 499px) {
     a {
         .description {
@@ -73,6 +74,7 @@ $peru: #C08F38;
 @media (min-width: 500px) {
     .box{
         .project {
+           
             .change {
                 width: 0; 
                 height: 400px;
@@ -106,6 +108,7 @@ $peru: #C08F38;
 
                 h2 {
                     color: $pink;
+                    
                 }
             }		
 

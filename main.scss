@@ -28,13 +28,33 @@ h1{
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
+    animation: flyin 1.2s ease forwards;
+    opacity: 0;
+    transform: scale(2);
+    filter: blur(4px);
 }
 
 h2{
     font-family: 'Fredericka the Great', cursive;
     color: $red;
     text-align: center;
+    animation: blinker 1.5s linear infinite;
 }
+
+// h1 animation
+@keyframes flyin {
+    to { 
+      filter: blur(0);
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+// h2 animation
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 // general grid layout -mobile first for index page
 .wrapper{
@@ -81,22 +101,9 @@ h2{
     width: auto;
     transform: rotate(0);
     transition: all 400ms;
-    // animation: flyin 1.2s ease forwards;
-    // opacity: 0;
-    // transform: scale(2);
-    // filter: blur(4px);
+
     &:hover {
         transform: rotate(360deg); 
-        
-    }
-}
-
-// social media icon animation
-@keyframes flyin {
-    to { 
-      filter: blur(0);
-      transform: scale(1);
-      opacity: 1;
     }
 }
   
@@ -143,6 +150,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     margin: 0.5em;
+    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
     
     img{
         width: 90%;
@@ -216,18 +224,47 @@ h2{
             height: 85%;
             background-color: rgba(255, 255, 255, 0.9);
             border-radius: 40px;
-            text-align: center;
 
             //format of form on talk page
             form {
+                text-align: left;
                 line-height: 25px;
+                
+                
                 input {
-                border: 1px solid $dark;
+                border: 1px solid $red;
+                border-radius: 5%;
                 }
-            }
 
-            button {
-                border: none;
+                input[type=text]:hover {
+                    background-color: $light;
+                }
+
+                textarea {
+                    box-sizing: border-box;
+                    border: 1px solid $red;
+                    border-radius: 5%;
+                    resize: none;
+
+                    &:hover {
+                        background-color: $light;
+                    }
+                }
+
+
+                .btn {
+                    border: 1px solid $red;
+                    color: $red;
+                    border-radius: 5%;
+                    margin-left: 100px;
+
+                    &:hover {
+                        transition: all .2s ease-in-out;
+                        background-color: $pink;
+                        transform: scale(1.5);
+                        color: $light;
+                        }
+                }
             }
 
             img {
@@ -241,7 +278,6 @@ h2{
         height: 200px;
         width: 320px;
         margin: 0 15px 15px 15px;
-        text-align: center;
     }
 
     .ed {
@@ -250,7 +286,13 @@ h2{
     .language {
         margin-bottom: 20px;
     }
-
+    .gif {
+        display: flex;
+        flex-direction: column;
+        iframe {
+            margin-top: 30px;
+        }
+    }
 }
 
 // enlarge pictures in case someone wants a closer look at images on talks page
@@ -448,7 +490,6 @@ h2{
     }
 
     #nav {
-       
         label {
             display: inline-block;
             font-size: 1.5em;
@@ -456,7 +497,6 @@ h2{
         }
 
         #nav-selectors {
-
             display: none;
             width: 100%;
             background-color: $dark;
@@ -476,11 +516,8 @@ h2{
             display: block;
         }  
     }
-
 }
 
-
-       
 // rules to change layout for medium sized screen like iPad
 @media (min-width: 500px) {
     .wrapper {
@@ -516,7 +553,6 @@ h2{
                 }
             }
         }
-            
     }
 }
 

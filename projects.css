@@ -45,6 +45,10 @@
   background-color: #C88F90;
 }
 
+iframe {
+  width: 300px;
+}
+
 @media (max-width: 499px) {
   a .description {
     margin-right: 20px;

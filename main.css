@@ -19,12 +19,53 @@ h1 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 15px;
+  -webkit-animation: flyin 1.2s ease forwards;
+          animation: flyin 1.2s ease forwards;
+  opacity: 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-filter: blur(4px);
+          filter: blur(4px);
 }
 
 h2 {
   font-family: 'Fredericka the Great', cursive;
   color: #A84D45;
   text-align: center;
+  -webkit-animation: blinker 1.5s linear infinite;
+          animation: blinker 1.5s linear infinite;
+}
+
+@-webkit-keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flyin {
+  to {
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .wrapper {
@@ -77,26 +118,6 @@ h2 {
 .social-click:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-}
-
-@-webkit-keyframes flyin {
-  to {
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes flyin {
-  to {
-    -webkit-filter: blur(0);
-            filter: blur(0);
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .content {
@@ -155,6 +176,8 @@ h2 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0.5em;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 .panel-image img {
@@ -228,19 +251,48 @@ h2 {
   height: 85%;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 40px;
-  text-align: center;
 }
 
 .container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
+  text-align: left;
   line-height: 25px;
 }
 
 .container .b1 .overlay form input, .container .b2 .overlay form input, .container .b3 .overlay form input {
-  border: 1px solid #3C3C30;
+  border: 1px solid #A84D45;
+  border-radius: 5%;
 }
 
-.container .b1 .overlay button, .container .b2 .overlay button, .container .b3 .overlay button {
-  border: none;
+.container .b1 .overlay form input[type=text]:hover, .container .b2 .overlay form input[type=text]:hover, .container .b3 .overlay form input[type=text]:hover {
+  background-color: #DFDCD9;
+}
+
+.container .b1 .overlay form textarea, .container .b2 .overlay form textarea, .container .b3 .overlay form textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #A84D45;
+  border-radius: 5%;
+  resize: none;
+}
+
+.container .b1 .overlay form textarea:hover, .container .b2 .overlay form textarea:hover, .container .b3 .overlay form textarea:hover {
+  background-color: #DFDCD9;
+}
+
+.container .b1 .overlay form .btn, .container .b2 .overlay form .btn, .container .b3 .overlay form .btn {
+  border: 1px solid #A84D45;
+  color: #A84D45;
+  border-radius: 5%;
+  margin-left: 100px;
+}
+
+.container .b1 .overlay form .btn:hover, .container .b2 .overlay form .btn:hover, .container .b3 .overlay form .btn:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #C88F90;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  color: #DFDCD9;
 }
 
 .container .b1 .overlay img, .container .b2 .overlay img, .container .b3 .overlay img {
@@ -252,7 +304,6 @@ h2 {
   height: 200px;
   width: 320px;
   margin: 0 15px 15px 15px;
-  text-align: center;
 }
 
 .container .ed {
@@ -261,6 +312,20 @@ h2 {
 
 .container .language {
   margin-bottom: 20px;
+}
+
+.container .gif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .gif iframe {
+  margin-top: 30px;
 }
 
 .talks img {
