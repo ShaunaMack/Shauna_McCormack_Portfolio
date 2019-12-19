@@ -255,7 +255,7 @@ h2 {
 
 .container .b1 .overlay button img, .container .b2 .overlay button img, .container .b3 .overlay button img {
   width: 150px;
-  height: auto;
+  height: 100px;
 }
 
 .container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
