@@ -21,6 +21,9 @@ $peru: #C08F38;
             box-shadow: 0 0 10px 1px $red;
             border-radius: 5%;
         }
+        .p6 {
+            background-image: url(./docs/MentorMarket.png);
+        }
 
         .p1 {
             background-image: url(./docs/Main_Menu.png);
@@ -40,12 +43,6 @@ $peru: #C08F38;
 
         .p5 {
             background-image: url(./docs/dundee.JPG);
-            background-color: $red;
-        }
-
-        .p6 {
-            background-image: url();
-            background-color: $pink;
         }
        
     }

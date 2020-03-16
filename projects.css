@@ -19,6 +19,10 @@
   border-radius: 5%;
 }
 
+.box .project .p6 {
+  background-image: url(./docs/MentorMarket.png);
+}
+
 .box .project .p1 {
   background-image: url(./docs/Main_Menu.png);
 }
@@ -37,12 +41,6 @@
 
 .box .project .p5 {
   background-image: url(./docs/dundee.JPG);
-  background-color: #A84D45;
-}
-
-.box .project .p6 {
-  background-image: url();
-  background-color: #C88F90;
 }
 
 @media (max-width: 499px) {
