@@ -70,8 +70,8 @@ h2{
 // rules for header for all screen sizes
 .head {
     grid-area: header;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     margin-bottom: 60px;
     
     #nav {
@@ -84,11 +84,12 @@ h2{
         
         #menu_checkbox {
             display: none;
+            color: $red;
         }
 
         a {
+            color: $red;
             display: block;
-            color: $light;
         }
     }
     
@@ -180,7 +181,6 @@ h2{
 
 // footer style for all pages
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -548,7 +548,6 @@ h2{
             li {
                 display: inline-block;
                 box-sizing: border-box;
-                float: right;
                 
                 a {
                 text-align: center;
