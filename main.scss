@@ -3,7 +3,13 @@ $light: #DFDCD9;
 $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
+$lightpink:#ECDADA;
 
+// import the other SASS files to animate cat and to animate images on project page
+@import 'projects';
+@import 'catanimate';
+@import 'navmenu';
+@import 'face';
 // reset any default settings in browser
 *{
     margin: 0;
@@ -57,55 +63,84 @@ h2{
   }
 
 // general grid layout -mobile first for index page
-.wrapper{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: 
-    "header"
-    "content"
-    "panel-image"
-    "footer";
+.wrapper {
+    display: flex;
+    width: calc(100% - 48px);
+    max-width: 1056px;
+    margin: 24px auto;
+
 }
 
-// rules for header for all screen sizes
-.head {
-    grid-area: header;
-    // display: flex;
-    // flex-wrap: wrap;
-    margin-bottom: 60px;
+.main {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%-100px);
     
-    #nav {
-        width: 100%;
-        background-color: $dark;
-        position: fixed;
-        top:0;
-        color: $pink;
-        z-index: 4;
-        
-        #menu_checkbox {
-            display: none;
-            color: $red;
-        }
+}
 
-        a {
-            color: $red;
-            display: block;
-        }
-    }
-    
+.sidebar {
+    padding-top: 30px;
+    width: 100px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 500px;
+    border: $red dashed 1px;
+    text-align: center;
+    background-color: $lightpink;
 }
 
 
 // links to social media via icons
 .social-click {
-    height: 50px;
+    height: 75px;
+    margin: 10px;
     width: auto;
     transform: rotate(0);
     transition: all 400ms;
+    border-radius: 5px;
 
     &:hover {
         transform: rotate(360deg); 
     }
+}
+
+.skills {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 100px;
+    width: 60%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 5px;
+}
+
+.logo {
+    height: 25px;
+    background-color: white;
+    width: 25px;
+    transform: rotate(0);
+    transition: all 400ms;
+    border-radius: 5px;
+    padding: 5px;
+
+    &:hover {
+        transform: rotate(360deg); 
+    }
+}
+
+.about {
+    border: 1px solid;
+    width: 350px;
+    padding: 5px;
 }
   
 .content {
@@ -136,7 +171,7 @@ h2{
             border-radius: 5%;
         }
         &:active {
-            color: $light;
+            color: $pink;
             background-color: $red;
             border-radius: 5%;
         }
@@ -306,50 +341,7 @@ h2{
     }
 }
 
-// about me photo changer (Shauna to Ricky the cat)
 
-.my-face {
-    .me-original {
-        width: 320px; 
-        height: 200px;
-        overflow: hidden;
-        background-image: url(./docs/myface.JPG);
-        margin: auto;
-        top: 0px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        box-shadow: 0 0 10px 1px #000;
-    }
-
-    .change {
-        width: 0; 
-        height: 200px;
-        overflow: hidden;
-        margin-left: -50px;
-        transform: skew(-20deg);
-        transition: width 1s ease;
-    }		
-
-    .me-original:hover .change {
-        width: 400px;
-    }
-// attempt to make clickable on the phone
-    .me-original:focus-within .change {
-        width: 400px;
-    }
-    .me-original:active .change {
-        width: 400px;
-    }
-
-    .cat-pic {
-        width: 400px; 
-        height: 200px;
-        transform: skew(20deg);
-        background-image: url(./docs/Rick.JPG);
-        opacity: 50%;
-    }		
-}
     
 // button to open Shauna's CV
 .cv-button {
@@ -392,191 +384,14 @@ h2{
 
 }
 
-// import the other SASS files to animate cat and to animate images on project page
-@import 'projects';
-@import 'catanimate';
-
-
-// animations for burger menu
-@keyframes moveUpThenDown
-{
-0%{ top:0; }
-50%{ top:-35px;}
-100%{ top:-20px; }
-}
-
-@keyframes shakeWhileMovingUp
-{
-0%{ transform: rotateZ(0); }
-25%{ transform:rotateZ(-10deg); }
-50%{ transform:rotateZ(0deg); }
-75%{ transform:rotateZ(10deg); }
-100%{ transform:rotateZ(0); }
-}
-
-@keyframes shakeWhileMovingDown
-{
-0%{ transform:rotateZ(0); }
-80%{ transform:rotateZ(3deg); }
-90%{ transform:rotateZ(-3deg); }
-100%{ transform:rotateZ(0); }
-}
- 
-
-// burger menu rule for small screen devices
-@media (max-width:499px) {
-
-    #menu_button {
-        width: 49px;
-        overflow: hidden;
-    }
-
-    #menu_label {
-        position: relative;
-        display: block;
-        height: 39px;
-        cursor: pointer;
-
-        ul {
-            display: none;
-        }
-    }
-   
-    #menu_label:before, #menu_label:after, #menu_text_bar {
-        position: absolute;
-        width: 39px;
-        height: 5px;
-        background-color: $light;
-        z-index: 5;
-        margin-top: 15px;
-    }
-
-    #menu_label:before, #menu_label:after {
-        content: '';
-        transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55) left;
-    }
-
-    #menu_label:before {
-        top: 0;
-    }
-
-    #menu_label:after {
-        top: 12px;
-    }
-
-    #menu_text_bar {
-        top: 24px;
-    }
-
-    #menu_text_bar:before {
-        content: 'MENU';
-        position: absolute;
-        top: 5px;
-        right: 0;
-        left: 0;
-        color: $pink;
-        font-size: 12px;
-        font-weight: bold;
-        text-align: center;
-        display: none;
-    }
-
-    #menu_checkbox:checked + #menu_label:before {
-        left: -49px;
-    }
-
-    #menu_checkbox:checked + #menu_label:after {
-        left: 49px;
-    }
-
-    #menu_checkbox:checked + #menu_label #menu_text_bar:before {
-        display: block;
-        animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-    }
-
-    #nav {
-        label {
-            display: inline-block;
-            font-size: 1.5em;
-            padding: 10px;
-        }
-
-        #nav-selectors {
-            display: none;
-            width: 100%;
-            background-color: $dark;
-            position: fixed;
-            top:0;
-            color: $pink;
-            z-index: 4;
-
-            li {
-                display: block;
-                padding: .5em 1em;
-                border-bottom: $light 1px solid;
-            }
-        }
-        // Toggle show/hide menu on checkbox click
-        #menu_button input:checked  ~ul {
-            display: block;
-        }  
-    }
-}
-
-// rules to change layout for medium sized screen like iPad
-@media (min-width: 500px) {
-    .wrapper {
-      grid-template-columns: 0.25fr 3fr 0.25fr;
-      grid-template-areas: 
-        "header header header"
-        ". content ."
-        ". panel-image ."
-        "footer footer footer";
-    }
-
-    .panel-image .name-box{
-        font-size: 1em;
-    }
-
-    #nav {
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        
-            li {
-                display: inline-block;
-                box-sizing: border-box;
-                
-                a {
-                text-align: center;
-                text-decoration: none;
-                padding: .75em 1em;
-                height: 25px;
-                }
-            }
-        }
-    }
-}
 
 // large sized screen style changes
 // some styles inherited from mobile and from medium sized device rules
-@media (min-width: 700px) {
-    .wrapper {
-        grid-template-columns: 0.25fr 4fr 2fr 0.25fr;
-        grid-template-areas: 
-        "header header header header"
-        ". panel-image content ."
-        "footer footer footer footer"
-    }
+@media (min-width: 1056px) {
     .panel-image .name-box{
         font-size: 1.3em;
     }
-    .social-click {
-        height: 80px;
-        width: auto;
-    }
+
 }
 
 

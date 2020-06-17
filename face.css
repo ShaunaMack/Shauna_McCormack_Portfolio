@@ -1,0 +1,48 @@
+.my-face .me-original {
+  width: 300px;
+  height: 300px;
+  background-image: url(./docs/ShaunaFace.JPG);
+  margin: auto;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 10px 1px #000;
+          box-shadow: 0 0 10px 1px #000;
+  border-radius: 50%;
+}
+
+.my-face .change {
+  width: 0;
+  height: 300px;
+  overflow: hidden;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
+  border-radius: 50%;
+  background-color: #C88F90;
+}
+
+.my-face .me-original:hover .change {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.my-face .me-original:focus-within .change {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.my-face .me-original:active .change {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.my-face .cat-pic {
+  width: 300px;
+  height: 300px;
+  background-image: url(./docs/dundeeface.JPG);
+  opacity: 90%;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=face.css.map */

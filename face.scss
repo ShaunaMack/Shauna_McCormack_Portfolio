@@ -1,0 +1,55 @@
+$dark: #3C3C30;
+$light: #DFDCD9;
+$pink: #C88F90;
+$red: #A84D45;
+$peru: #C08F38;
+// about me photo changer (Shauna to Ricky the cat)
+
+.my-face {
+    .me-original {
+        width: 300px; 
+        height: 300px;
+        // overflow: hidden;
+        background-image: url(./docs/ShaunaFace.JPG);
+        margin: auto;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0 10px 1px #000;
+        border-radius: 50%;
+    }
+
+    .change {
+        width: 0; 
+        height: 300px;
+        overflow: hidden;
+        transition: width 1s ease;
+        border-radius: 50%;
+        background-color: $pink;
+    }		
+
+    .me-original:hover .change {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+// attempt to make clickable on the phone
+    .me-original:focus-within .change {
+        width: 300px;
+        border-radius: 50%;
+    }
+    .me-original:active .change {
+        width: 300px;
+        border-radius: 50%;
+    }
+    .cat-pic {
+        
+        width: 300px; 
+        height: 300px;
+        background-image: url(./docs/dundeeface.JPG);
+        opacity: 90%;
+        border-radius: 50%;
+    }	
+    	
+}
