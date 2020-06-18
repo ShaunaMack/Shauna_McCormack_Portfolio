@@ -25,6 +25,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: $light;
     color: $dark;
+    scroll-behavior: smooth;
 }
 
 // rules for headings
@@ -62,21 +63,69 @@ h2{
     }
   }
 
+
+.name-box{
+    width: 90%;
+    background-color: $pink;
+    color: $light;
+    font-family: 'Source Code Pro', monospace;
+    // opacity: 75%;
+    padding: 1em;
+    border: 2px solid $red;
+    outline: 1px dashed $light;
+    outline-offset: -10px;
+    font-weight: bold;
+    font-size: .6em;
+    border-radius: 15px;
+
+    .define {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 5px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid $peru; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+        h2 {
+            color: $dark;
+            margin-top: 15px;
+        }
+
+    }
+
+    .inner-code{
+        color: $light;
+    }
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: $peru }
+}
+
 // general grid layout -mobile first for index page
 .wrapper {
     display: flex;
-    width: calc(100% - 48px);
     max-width: 1056px;
-    margin: 24px auto;
-
 }
 
+
 .main {
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
-    width: calc(100%-100px);
-    
+    // max-width: calc(100%-100px);
 }
 
 .sidebar {
@@ -105,13 +154,14 @@ h2{
         transform: rotate(360deg); 
     }
 }
+.skill-heading {
+      width: 100%;
+}
 
 .skills {
-    border: 1px solid;
     display: flex;
     flex-wrap: wrap;
     min-width: 100px;
-    width: 60%;
 }
 
 .skill {
@@ -119,7 +169,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 130px;
     margin: 5px;
 }
 
@@ -133,19 +183,16 @@ h2{
     padding: 5px;
 
     &:hover {
-        transform: rotate(360deg); 
+        transform: scale(2.75); 
     }
 }
 
 .about {
-    border: 1px solid;
     width: 350px;
     padding: 5px;
 }
   
 .content {
-    grid-area: content;
-    height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -153,7 +200,7 @@ h2{
 }
 
 // styles for selecting links
-#nav, .ed, .project{
+#nav, .block-box, .project{
     a {
         text-decoration: none;
         color: $red;
@@ -178,52 +225,47 @@ h2{
     }
 }
 
+
 // index page duck and "code" styling
 .panel-image {
-    height: 90%;
-    grid-area: panel-image;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0.5em;
     animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
     
     img{
         width: 90%;
         border-radius: 5%;
         padding: 1em;
-    }
-
-    .name-box{
-        width: 90%;
-        background-color: $pink;
-        color: $light;
-        font-family: 'Source Code Pro', monospace;
-        opacity: 75%;
-        padding: 1em;
-        border: 2px solid $red;
-        outline: 1px dashed $light;
-        outline-offset: -15px;
-        font-weight: bold;
-        font-size: .75em;
-        border-radius: 5%;
-    
-        .inner-code{
-            color: $dark;
-        }
+            &:hover {
+                transform: rotate(180deg);
+            }
     }
 }
+
+.block-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+    .block {
+        width: 45%;
+        height: 200px;
+        min-width: 320px;
+        margin: 0 15px 15px 15px;
+    }
+}
+
+
 
 // footer style for all pages
 .footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    color: $light;
+    color: $red;
     text-align: center;
     font-size: 0.75em;
-    background-color: $dark;
-    
 }
 
 // flex box containers for the different pages with various sizes (per page)
@@ -231,17 +273,15 @@ h2{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
     height: auto;
     
-
     .box{
         height: 300px;
         width: 300px;
         border: 1px $dark solid;
         margin: 10px;
         background-color: $pink;
-        border-radius: 5%;
+        border-radius: 15px;
 
     }
 
@@ -313,18 +353,12 @@ h2{
         }
     }
     
-    .block {
-        height: 200px;
-        width: 320px;
-        margin: 0 15px 15px 15px;
-    }
+    // .block {
+    //     height: 200px;
+    //     width: 320px;
+    //     margin: 0 15px 15px 15px;
+    // }
 
-    .ed {
-        margin-bottom: 50px;
-    }
-    .language {
-        margin-bottom: 20px;
-    }
     .gif {
         display: flex;
         flex-direction: column;
@@ -334,43 +368,15 @@ h2{
     }
 }
 
-// enlarge pictures in case someone wants a closer look at images on talks page
-.talks {   
-    img {
-        width: 100vw;
-    }
-}
-
-
-    
-// button to open Shauna's CV
-.cv-button {
+#catanimate {
     display: flex;
     justify-content: center;
-    width: 100px;
-    height: 20px;
-    padding: 5px;
-    border: $red solid 2px;
-    border-radius: 5%;
-    margin-left: 100px;
-    margin-top: 10px;
-    color: $red;
-
-    .btn-words{
-        font-size: 0.75em;
-    }
-
-    &:hover {
-        transition: all .2s ease-in-out;
-        background-color: $pink;
-        transform: scale(1.5);
-        color: $light;
-        }
 }
+    
 
 .presenting {
-    background-image: url("./docs/presenting.JPG");
-    width: 100%;
+    // background-image: url("./docs/presenting.JPG");
+    // width: 100%;
 
     .box {
         background-color: $light;
@@ -387,7 +393,24 @@ h2{
 
 // large sized screen style changes
 // some styles inherited from mobile and from medium sized device rules
+@media (min-width: 800px) {
+    h2 {
+        margin-top: 50px;
+    }
+    .name-box {
+        width: 600px;
+        font-size: 1em;
+    }
+    .skills {
+        width: calc(100% - 365px);
+    }
+
+}
 @media (min-width: 1056px) {
+    .wrapper {
+        width: calc(100% - 48px);
+        margin: 24px auto;
+    }
     .panel-image .name-box{
         font-size: 1.3em;
     }

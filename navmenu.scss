@@ -133,6 +133,7 @@ $peru: #C08F38;
             display: inline-block;
             font-size: 1.5em;
             padding: 10px;
+            background-color: $light;
         }
 
         #nav-selectors {
@@ -142,6 +143,7 @@ $peru: #C08F38;
             top:0;
             color: $pink;
             z-index: 4;
+            
 
             li {
                 display: block;
@@ -159,12 +161,10 @@ $peru: #C08F38;
 
 // rules to change layout for medium sized screen like iPad
 @media (min-width: 500px) {
-    .panel-image .name-box{
-        font-size: 1em;
-    }
-
     #nav {
-        
+        background-color: $light;
+        opacity: 50%;
+        width: 200px;
         ul {
             list-style-type: none;
             margin: 0;
@@ -173,6 +173,7 @@ $peru: #C08F38;
             li {
                 display: inline-block;
                 box-sizing: border-box;
+                
                 
                 a {
                 text-align: center;
