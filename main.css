@@ -1032,13 +1032,17 @@ h2 {
 }
 
 .container .b3 {
-  height: 500px;
+  height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container .b3 p {
+  text-align: left;
 }
 
 .container .b3 form {
@@ -1049,7 +1053,7 @@ h2 {
 .container .b3 form input {
   border: 1px solid #A84D45;
   border-radius: 3px;
-  width: 250px;
+  width: 270px;
   line-height: 30px;
 }
 
@@ -1063,7 +1067,7 @@ h2 {
   border: 1px solid #A84D45;
   border-radius: 3px;
   resize: none;
-  width: 250px;
+  width: 270px;
   line-height: 30px;
 }
 
@@ -1075,9 +1079,9 @@ h2 {
   border: 1px solid #A84D45;
   color: #A84D45;
   border-radius: 5px;
-  margin-left: 25px;
   padding: 5px;
   margin-top: 5px;
+  width: 100px;
 }
 
 .container .b3 form .btn:hover {
@@ -1095,17 +1099,14 @@ h2 {
   margin: 15px;
 }
 
-.talk-box button {
+.talk-box img {
   margin-bottom: 20px;
-}
-
-.talk-box button img {
   cursor: pointer;
   width: 180px;
   height: 100px;
 }
 
-.talk-box button img:hover {
+.talk-box img:hover {
   -webkit-transform: scale(3);
           transform: scale(3);
 }
