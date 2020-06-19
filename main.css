@@ -1099,14 +1099,19 @@ h2 {
   margin: 15px;
 }
 
-.talk-box img {
+.talk-box .presenting {
+  width: 180px;
+  height: 100px;
+}
+
+.talk-box .presenting img {
   margin-bottom: 20px;
   cursor: pointer;
   width: 180px;
   height: 100px;
 }
 
-.talk-box img:hover {
+.talk-box .presenting img:hover {
   -webkit-transform: scale(3);
           transform: scale(3);
 }
