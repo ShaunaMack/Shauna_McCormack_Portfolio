@@ -644,13 +644,6 @@ h1 {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  -webkit-animation: flyin 1.2s ease forwards;
-          animation: flyin 1.2s ease forwards;
-  opacity: 0;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  -webkit-filter: blur(4px);
-          filter: blur(4px);
 }
 
 h2 {
@@ -696,20 +689,15 @@ h2 {
 }
 
 .name-box {
-  width: 90%;
-  background-color: #C88F90;
-  color: #DFDCD9;
+  width: 95%;
   font-family: 'Source Code Pro', monospace;
-  padding: 1em;
-  border: 2px solid #A84D45;
-  outline: 1px dashed #DFDCD9;
-  outline-offset: -10px;
   font-weight: bold;
   border-radius: 15px;
 }
 
 .name-box .inner-code {
-  font-size: .6em;
+  font-size: .65em;
+  color: #3C3C30;
 }
 
 .name-box .define {
@@ -738,13 +726,8 @@ h2 {
           animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-.name-box .define h2 {
-  color: #3C3C30;
+.name-box .define h1 {
   margin-top: 15px;
-}
-
-.name-box .inner-code {
-  color: #DFDCD9;
 }
 
 /* The typing effect */
@@ -911,19 +894,19 @@ h2 {
 #nav a:hover, .block-box a:hover, .project a:hover, .to-top a:hover {
   color: #DFDCD9;
   background-color: #C88F90;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 #nav a:focus-within, .block-box a:focus-within, .project a:focus-within, .to-top a:focus-within {
   background-color: #A84D45;
   color: #DFDCD9;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 #nav a:active, .block-box a:active, .project a:active, .to-top a:active {
   color: #C88F90;
   background-color: #A84D45;
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 .panel-image {
@@ -943,7 +926,7 @@ h2 {
 
 .panel-image img {
   width: 90%;
-  border-radius: 5%;
+  border-radius: 15px;
   padding: 1em;
 }
 
@@ -1042,92 +1025,101 @@ h2 {
 .container .box {
   height: 300px;
   width: 300px;
-  border: 1px #3C3C30 solid;
+  border: 1px #A84D45 solid;
   margin: 10px;
   background-color: #C88F90;
   border-radius: 15px;
 }
 
-.container .b1, .container .b2, .container .b3 {
-  height: 400px;
+.container .b3 {
+  height: 500px;
 }
 
-.container .b1 .overlay, .container .b2 .overlay, .container .b3 .overlay {
-  width: 85%;
-  min-width: 30%;
-  margin: 3% auto;
-  display: block;
-  padding: 2%;
-  height: 85%;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 40px;
-}
-
-.container .b1 .overlay button img, .container .b2 .overlay button img, .container .b3 .overlay button img {
-  cursor: pointer;
-  width: 150px;
-  height: 100px;
-}
-
-.container .b1 .overlay button img:hover, .container .b2 .overlay button img:hover, .container .b3 .overlay button img:hover {
-  -webkit-transform: scale(5);
-          transform: scale(5);
-}
-
-.container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
+.container .b3 form {
   text-align: left;
-  line-height: 25px;
+  line-height: 30px;
 }
 
-.container .b1 .overlay form input, .container .b2 .overlay form input, .container .b3 .overlay form input {
+.container .b3 form input {
   border: 1px solid #A84D45;
-  border-radius: 5%;
+  border-radius: 3px;
+  width: 250px;
+  line-height: 30px;
 }
 
-.container .b1 .overlay form input[type=text]:hover, .container .b2 .overlay form input[type=text]:hover, .container .b3 .overlay form input[type=text]:hover {
+.container .b3 form input[type=text]:hover {
   background-color: #DFDCD9;
 }
 
-.container .b1 .overlay form textarea, .container .b2 .overlay form textarea, .container .b3 .overlay form textarea {
+.container .b3 form textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #A84D45;
-  border-radius: 5%;
+  border-radius: 3px;
   resize: none;
+  width: 250px;
+  line-height: 30px;
 }
 
-.container .b1 .overlay form textarea:hover, .container .b2 .overlay form textarea:hover, .container .b3 .overlay form textarea:hover {
+.container .b3 form textarea:hover {
   background-color: #DFDCD9;
 }
 
-.container .b1 .overlay form .btn, .container .b2 .overlay form .btn, .container .b3 .overlay form .btn {
+.container .b3 form .btn {
   border: 1px solid #A84D45;
   color: #A84D45;
-  border-radius: 5%;
-  margin-left: 100px;
+  border-radius: 5px;
+  margin-left: 25px;
+  padding: 5px;
+  margin-top: 5px;
 }
 
-.container .b1 .overlay form .btn:hover, .container .b2 .overlay form .btn:hover, .container .b3 .overlay form .btn:hover {
+.container .b3 form .btn:hover {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #C88F90;
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  color: #DFDCD9;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #ECDADA;
 }
 
-.container .gif {
+.talk-box {
+  width: 300px;
+  text-align: left;
+  margin: 15px;
+}
+
+.talk-box button {
+  margin-bottom: 20px;
+}
+
+.talk-box button img {
+  cursor: pointer;
+  width: 180px;
+  height: 100px;
+}
+
+.talk-box button img:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.gif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 320px;
 }
 
-.container .gif iframe {
-  margin-top: 30px;
+.gif iframe {
+  margin: 15px;
 }
 
 #catanimate {
@@ -1141,12 +1133,9 @@ h2 {
 
 .presenting .box {
   background-color: #DFDCD9;
-  opacity: 75%;
   padding: 1em;
-  border: 2px solid #A84D45;
-  outline: 1px dashed #DFDCD9;
-  outline-offset: -15px;
-  border-radius: 5%;
+  border: 1px solid #A84D45;
+  border-radius: 15px;
 }
 
 @media (min-width: 800px) {
@@ -1169,7 +1158,7 @@ h2 {
     margin: 24px auto;
   }
   .panel-image .name-box {
-    font-size: 1.3em;
+    font-size: 1.5em;
   }
 }
 /*# sourceMappingURL=main.css.map */
