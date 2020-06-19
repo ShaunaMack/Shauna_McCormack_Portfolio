@@ -34,7 +34,7 @@ h1{
     color: $dark;
     text-align: center;
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     animation: flyin 1.2s ease forwards;
     opacity: 0;
     transform: scale(2);
@@ -46,6 +46,8 @@ h2{
     color: $red;
     text-align: center;
     animation: blinker 1.5s linear;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 // h1 animation
@@ -75,8 +77,10 @@ h2{
     outline: 1px dashed $light;
     outline-offset: -10px;
     font-weight: bold;
-    font-size: .6em;
     border-radius: 15px;
+    .inner-code {
+        font-size: .6em;
+    }
 
     .define {
         display: flex;
@@ -118,7 +122,8 @@ h2{
 // general grid layout -mobile first for index page
 .wrapper {
     display: flex;
-    max-width: 1056px;
+    max-width: 1170px;
+    margin: 15px;
 }
 
 
@@ -135,9 +140,10 @@ h2{
     position: sticky;
     top: 0;
     height: 500px;
-    border: $red dashed 1px;
+    border: $red solid 1px;
     text-align: center;
     background-color: $lightpink;
+    border-radius: 15px;
 }
 
 
@@ -172,6 +178,14 @@ h2{
     width: 130px;
     margin: 5px;
 }
+@media (max-width: 499px) {
+    .skill {
+        width: 100px;
+        p {
+            font-size: .7rem;
+        }
+    }
+}
 
 .logo {
     height: 25px;
@@ -200,7 +214,7 @@ h2{
 }
 
 // styles for selecting links
-#nav, .block-box, .project{
+#nav, .block-box, .project, .to-top{
     a {
         text-decoration: none;
         color: $red;
@@ -231,16 +245,24 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-    
+    animation: wiggle 5s infinite;
     img{
         width: 90%;
         border-radius: 5%;
         padding: 1em;
             &:hover {
-                transform: rotate(180deg);
+                // transform: rotate(180deg);
+                animation: none;
             }
     }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 
 .block-box {
@@ -257,7 +279,6 @@ h2{
 }
 
 
-
 // footer style for all pages
 .footer {
     left: 0;
@@ -266,6 +287,7 @@ h2{
     color: $red;
     text-align: center;
     font-size: 0.75em;
+    margin-top: 20px;
 }
 
 // flex box containers for the different pages with various sizes (per page)
@@ -302,8 +324,12 @@ h2{
 
             button {
                 img {
-                width: 150px;
-                height: 100px;
+                    cursor: pointer;
+                    width: 150px;
+                    height: 100px;
+                    &:hover {
+                        transform: scale(5); 
+                    }
                 }
             }
 
@@ -394,19 +420,20 @@ h2{
 // large sized screen style changes
 // some styles inherited from mobile and from medium sized device rules
 @media (min-width: 800px) {
-    h2 {
-        margin-top: 50px;
-    }
     .name-box {
-        width: 600px;
+        width: 80%;
         font-size: 1em;
+        margin-bottom: 30px;
+        .inner-code {
+            font-size: 1em;
+        }
     }
     .skills {
         width: calc(100% - 365px);
     }
 
 }
-@media (min-width: 1056px) {
+@media (min-width: 1170px) {
     .wrapper {
         width: calc(100% - 48px);
         margin: 24px auto;

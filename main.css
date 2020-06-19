@@ -10,12 +10,6 @@
   height: 300px;
   overflow: hidden;
   margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: 0 0 10px 1px #A84D45;
-          box-shadow: 0 0 10px 1px #A84D45;
   border-radius: 5%;
 }
 
@@ -40,22 +34,25 @@
 }
 
 .box .project .p5 {
-  background-image: url(./docs/dundee.JPG);
+  background-image: url(./docs/readitnwipe.png);
+}
+
+.box .project .description {
+  color: #3C3C30;
+  text-align: center;
+  width: 280px;
+  height: 150px;
+  margin-top: 180px;
+  padding: 10px;
+  font-size: .9rem;
 }
 
 @media (max-width: 499px) {
-  a .description {
-    margin-right: 20px;
-    background-color: #3C3C30;
-    color: #DFDCD9;
-    font-size: 0.75em;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    margin: 120px 120px;
-    opacity: 85%;
-    padding: 5px;
-    border-radius: 5%;
+  .project .final {
+    margin-top: 200px;
+    width: 300px;
+    background-color: #ECDADA;
+    height: 100px;
   }
 }
 
@@ -85,7 +82,7 @@
     height: 700px;
     -webkit-transform: skew(10deg);
             transform: skew(10deg);
-    background-color: #3C3C30;
+    background-color: #ECDADA;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,58 +94,34 @@
     border-radius: 5%;
     background-repeat: no-repeat;
   }
-  .box .project .final h2 {
-    color: #C88F90;
-  }
   .box .project .description {
-    width: 210px;
-    height: 150px;
-    margin-left: 160px;
-    margin-top: 150px;
-    background-color: none;
+    color: #3C3C30;
+    margin-left: 110px;
+    margin-top: 10px;
+    background-color: rgba(236, 218, 218, 0.5);
+    height: 100px;
+    border-radius: 20px;
+  }
+  .box .project .description h2 {
+    color: #A84D45;
   }
   .box .project .paw1 {
     background-image: url(./docs/paws/ricky-paw.png);
   }
-  .box .project .paw1 .description {
-    margin-left: 160px;
-    margin-top: 10px;
-  }
   .box .project .paw2 {
-    background-image: url(./docs/paws/gigi-paw.png);
+    background-image: url(./docs/paws/margot-paw.png);
   }
-  .box .project .paw2 .description {
-    margin-left: 150px;
-    margin-top: 80px;
-  }
-  .box .project .paw3 {
+  .box .project .paw5 {
     background-image: url(./docs/paws/monkey-paw.png);
-    top: 100px;
-  }
-  .box .project .paw3 .description {
-    margin-left: 160px;
-    margin-top: 150px;
   }
   .box .project .paw4 {
     background-image: url(./docs/paws/margot-paw.png);
   }
-  .box .project .paw4 .description {
-    margin-left: 160px;
-    margin-top: 200px;
-  }
-  .box .project .paw5 {
+  .box .project .paw3 {
     background-image: url(./docs/paws/duncan-paw.png);
-  }
-  .box .project .paw5 .description {
-    margin-left: 160px;
-    margin-top: 10px;
   }
   .box .project .paw6 {
     background-image: url(./docs/paws/ricky-paw.png);
-  }
-  .box .project .paw6 .description {
-    margin-left: 160px;
-    margin-top: 80px;
   }
 }
 
@@ -557,7 +530,6 @@
     display: inline-block;
     font-size: 1.5em;
     padding: 10px;
-    background-color: #DFDCD9;
   }
   #nav #nav-selectors {
     display: none;
@@ -581,7 +553,7 @@
 @media (min-width: 500px) {
   #nav {
     background-color: #DFDCD9;
-    opacity: 50%;
+    opacity: 75%;
     width: 200px;
   }
   #nav ul {
@@ -671,7 +643,7 @@ h1 {
   color: #3C3C30;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   -webkit-animation: flyin 1.2s ease forwards;
           animation: flyin 1.2s ease forwards;
   opacity: 0;
@@ -687,6 +659,8 @@ h2 {
   text-align: center;
   -webkit-animation: blinker 1.5s linear;
           animation: blinker 1.5s linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @-webkit-keyframes flyin {
@@ -731,8 +705,11 @@ h2 {
   outline: 1px dashed #DFDCD9;
   outline-offset: -10px;
   font-weight: bold;
-  font-size: .6em;
   border-radius: 15px;
+}
+
+.name-box .inner-code {
+  font-size: .6em;
 }
 
 .name-box .define {
@@ -810,7 +787,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1056px;
+  max-width: 1170px;
+  margin: 15px;
 }
 
 .main {
@@ -828,9 +806,10 @@ h2 {
   position: sticky;
   top: 0;
   height: 500px;
-  border: #A84D45 dashed 1px;
+  border: #A84D45 solid 1px;
   text-align: center;
   background-color: #ECDADA;
+  border-radius: 15px;
 }
 
 .social-click {
@@ -880,6 +859,15 @@ h2 {
   margin: 5px;
 }
 
+@media (max-width: 499px) {
+  .skill {
+    width: 100px;
+  }
+  .skill p {
+    font-size: .7rem;
+  }
+}
+
 .logo {
   height: 25px;
   background-color: white;
@@ -914,25 +902,25 @@ h2 {
   text-align: center;
 }
 
-#nav a, .block-box a, .project a {
+#nav a, .block-box a, .project a, .to-top a {
   text-decoration: none;
   color: #A84D45;
   text-align: center;
 }
 
-#nav a:hover, .block-box a:hover, .project a:hover {
+#nav a:hover, .block-box a:hover, .project a:hover, .to-top a:hover {
   color: #DFDCD9;
   background-color: #C88F90;
   border-radius: 5%;
 }
 
-#nav a:focus-within, .block-box a:focus-within, .project a:focus-within {
+#nav a:focus-within, .block-box a:focus-within, .project a:focus-within, .to-top a:focus-within {
   background-color: #A84D45;
   color: #DFDCD9;
   border-radius: 5%;
 }
 
-#nav a:active, .block-box a:active, .project a:active {
+#nav a:active, .block-box a:active, .project a:active, .to-top a:active {
   color: #C88F90;
   background-color: #A84D45;
   border-radius: 5%;
@@ -949,8 +937,8 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: wiggle 5s infinite;
+          animation: wiggle 5s infinite;
 }
 
 .panel-image img {
@@ -960,8 +948,54 @@ h2 {
 }
 
 .panel-image img:hover {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  85% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  95% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 .block-box {
@@ -990,6 +1024,7 @@ h2 {
   color: #A84D45;
   text-align: center;
   font-size: 0.75em;
+  margin-top: 20px;
 }
 
 .container {
@@ -1029,8 +1064,14 @@ h2 {
 }
 
 .container .b1 .overlay button img, .container .b2 .overlay button img, .container .b3 .overlay button img {
+  cursor: pointer;
   width: 150px;
   height: 100px;
+}
+
+.container .b1 .overlay button img:hover, .container .b2 .overlay button img:hover, .container .b3 .overlay button img:hover {
+  -webkit-transform: scale(5);
+          transform: scale(5);
 }
 
 .container .b1 .overlay form, .container .b2 .overlay form, .container .b3 .overlay form {
@@ -1109,11 +1150,12 @@ h2 {
 }
 
 @media (min-width: 800px) {
-  h2 {
-    margin-top: 50px;
-  }
   .name-box {
-    width: 600px;
+    width: 80%;
+    font-size: 1em;
+    margin-bottom: 30px;
+  }
+  .name-box .inner-code {
     font-size: 1em;
   }
   .skills {
@@ -1121,7 +1163,7 @@ h2 {
   }
 }
 
-@media (min-width: 1056px) {
+@media (min-width: 1170px) {
   .wrapper {
     width: calc(100% - 48px);
     margin: 24px auto;

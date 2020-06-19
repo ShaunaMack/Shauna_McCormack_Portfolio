@@ -3,6 +3,7 @@ $light: #DFDCD9;
 $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
+$lightpink:#ECDADA;
 
 .box{
     .project {
@@ -14,11 +15,10 @@ $peru: #C08F38;
             height: 300px;
             overflow: hidden;
             margin: auto;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            box-shadow: 0 0 10px 1px $red;
+            // top: 0;
+            // bottom: 0;
+            // left: 0;
+            // right: 0;
             border-radius: 5%;
         }
         .p6 {
@@ -42,27 +42,34 @@ $peru: #C08F38;
         }
 
         .p5 {
-            background-image: url(./docs/dundee.JPG);
+            background-image: url(./docs/readitnwipe.png);
         }
-       
+
+        .description {
+            color: $dark;
+            text-align: center;
+            width: 280px;
+            height: 150px;
+            margin-top: 180px;
+            padding: 10px;
+            font-size: .9rem;
+
+            h2 {
+                // color: $pink;
+            }
+        }
     }
 }
 
 
 @media (max-width: 499px) {
-    a {
-        .description {
-            margin-right: 20px;
-            background-color: $dark;
-            color: $light;
-            font-size: 0.75em;
-            text-align: center;
-            width: 150px;
-            height: 150px;
-            margin: 120px 120px;
-            opacity: 85%;
-            padding: 5px;
-            border-radius: 5%;
+    .project {
+        
+        .final {
+            margin-top: 200px;
+            width: 300px;
+            background-color: $lightpink;
+            height: 100px;
         }
     }
 }
@@ -95,70 +102,50 @@ $peru: #C08F38;
                 width: 700px; 
                 height: 700px;
                 transform: skew(10deg);
-                background-color: $dark;
+                background-color: $lightpink;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
                 border-radius: 5%;
                 background-repeat: no-repeat;
 
-                h2 {
-                    color: $pink;
-                    
-                }
+                
             }		
 
             .description {
-                width: 210px;
-                height: 150px;
-                margin-left: 160px;
-                margin-top: 150px;
-                background-color: none;
+                color: $dark;
+                margin-left: 110px;
+                margin-top: 10px;
+                background-color: rgba($color: $lightpink, $alpha: 0.5);
+                height: 100px;
+                border-radius: 20px;
+                h2 {
+                    color: $red;
+                }
+                // width: 300px;
+                // height: 150px;
+                // margin-left: 160px;
+                // margin-top: 150px;
+                // background-color: $dark;
             }
             
             .paw1 {
                 background-image: url(./docs/paws/ricky-paw.png);
-                .description {
-                    margin-left: 160px;
-                    margin-top: 10px;
-                }
             }
-
             .paw2 {
-                background-image: url(./docs/paws/gigi-paw.png);
-                .description {
-                    margin-left: 150px;
-                    margin-top: 80px;
-                }
+                background-image: url(./docs/paws/margot-paw.png);
             }
-            .paw3 {
+            .paw5 {
                 background-image: url(./docs/paws/monkey-paw.png);
-                top: 100px;
-                .description {
-                    margin-left: 160px;
-                    margin-top: 150px;
-                }
             }
             .paw4 {
                 background-image: url(./docs/paws/margot-paw.png);
-                .description {
-                    margin-left: 160px;
-                    margin-top: 200px;
-                }
             }
-            .paw5 {
+            .paw3 {
                 background-image: url(./docs/paws/duncan-paw.png);
-                .description {
-                    margin-left: 160px;
-                    margin-top: 10px;
-                }
             }
             .paw6 {
                 background-image: url(./docs/paws/ricky-paw.png);
-                .description {
-                    margin-left: 160px;
-                    margin-top: 80px;
-                }
             }
         }
     }

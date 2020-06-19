@@ -133,7 +133,6 @@ $peru: #C08F38;
             display: inline-block;
             font-size: 1.5em;
             padding: 10px;
-            background-color: $light;
         }
 
         #nav-selectors {
@@ -163,7 +162,7 @@ $peru: #C08F38;
 @media (min-width: 500px) {
     #nav {
         background-color: $light;
-        opacity: 50%;
+        opacity: 75%;
         width: 200px;
         ul {
             list-style-type: none;

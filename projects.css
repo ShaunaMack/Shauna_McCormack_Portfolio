@@ -10,12 +10,6 @@
   height: 300px;
   overflow: hidden;
   margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-box-shadow: 0 0 10px 1px #A84D45;
-          box-shadow: 0 0 10px 1px #A84D45;
   border-radius: 5%;
 }
 
@@ -40,22 +34,25 @@
 }
 
 .box .project .p5 {
-  background-image: url(./docs/dundee.JPG);
+  background-image: url(./docs/readitnwipe.png);
+}
+
+.box .project .description {
+  color: #3C3C30;
+  text-align: center;
+  width: 280px;
+  height: 150px;
+  margin-top: 180px;
+  padding: 10px;
+  font-size: .9rem;
 }
 
 @media (max-width: 499px) {
-  a .description {
-    margin-right: 20px;
-    background-color: #3C3C30;
-    color: #DFDCD9;
-    font-size: 0.75em;
-    text-align: center;
-    width: 150px;
-    height: 150px;
-    margin: 120px 120px;
-    opacity: 85%;
-    padding: 5px;
-    border-radius: 5%;
+  .project .final {
+    margin-top: 200px;
+    width: 300px;
+    background-color: #ECDADA;
+    height: 100px;
   }
 }
 
@@ -85,7 +82,7 @@
     height: 700px;
     -webkit-transform: skew(10deg);
             transform: skew(10deg);
-    background-color: #3C3C30;
+    background-color: #ECDADA;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -97,58 +94,34 @@
     border-radius: 5%;
     background-repeat: no-repeat;
   }
-  .box .project .final h2 {
-    color: #C88F90;
-  }
   .box .project .description {
-    width: 210px;
-    height: 150px;
-    margin-left: 160px;
-    margin-top: 150px;
-    background-color: none;
+    color: #3C3C30;
+    margin-left: 110px;
+    margin-top: 10px;
+    background-color: rgba(236, 218, 218, 0.5);
+    height: 100px;
+    border-radius: 20px;
+  }
+  .box .project .description h2 {
+    color: #A84D45;
   }
   .box .project .paw1 {
     background-image: url(./docs/paws/ricky-paw.png);
   }
-  .box .project .paw1 .description {
-    margin-left: 160px;
-    margin-top: 10px;
-  }
   .box .project .paw2 {
-    background-image: url(./docs/paws/gigi-paw.png);
+    background-image: url(./docs/paws/margot-paw.png);
   }
-  .box .project .paw2 .description {
-    margin-left: 150px;
-    margin-top: 80px;
-  }
-  .box .project .paw3 {
+  .box .project .paw5 {
     background-image: url(./docs/paws/monkey-paw.png);
-    top: 100px;
-  }
-  .box .project .paw3 .description {
-    margin-left: 160px;
-    margin-top: 150px;
   }
   .box .project .paw4 {
     background-image: url(./docs/paws/margot-paw.png);
   }
-  .box .project .paw4 .description {
-    margin-left: 160px;
-    margin-top: 200px;
-  }
-  .box .project .paw5 {
+  .box .project .paw3 {
     background-image: url(./docs/paws/duncan-paw.png);
-  }
-  .box .project .paw5 .description {
-    margin-left: 160px;
-    margin-top: 10px;
   }
   .box .project .paw6 {
     background-image: url(./docs/paws/ricky-paw.png);
-  }
-  .box .project .paw6 .description {
-    margin-left: 160px;
-    margin-top: 80px;
   }
 }
 /*# sourceMappingURL=projects.css.map */

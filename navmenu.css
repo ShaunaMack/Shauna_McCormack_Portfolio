@@ -192,7 +192,6 @@
     display: inline-block;
     font-size: 1.5em;
     padding: 10px;
-    background-color: #DFDCD9;
   }
   #nav #nav-selectors {
     display: none;
@@ -216,7 +215,7 @@
 @media (min-width: 500px) {
   #nav {
     background-color: #DFDCD9;
-    opacity: 50%;
+    opacity: 75%;
     width: 200px;
   }
   #nav ul {
