@@ -75,8 +75,8 @@ h2{
     // border: 3px solid $red;
     font-weight: bold;
     border-radius: 15px;
+    font-size: .65em;
     .inner-code {
-        font-size: .65em;
         color: $dark;
     }
 
@@ -303,6 +303,8 @@ h2{
 
     .b3 {
         height: 500px;
+        display: flex;
+        justify-content: center;
 // inner section for easier viewing of text on talks page and the form
         
 

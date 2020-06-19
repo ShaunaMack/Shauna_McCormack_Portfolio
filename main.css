@@ -693,10 +693,10 @@ h2 {
   font-family: 'Source Code Pro', monospace;
   font-weight: bold;
   border-radius: 15px;
+  font-size: .65em;
 }
 
 .name-box .inner-code {
-  font-size: .65em;
   color: #3C3C30;
 }
 
@@ -1033,6 +1033,12 @@ h2 {
 
 .container .b3 {
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .b3 form {
