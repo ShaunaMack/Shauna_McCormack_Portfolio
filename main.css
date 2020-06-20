@@ -30,7 +30,7 @@
 }
 
 .box .project .p4 {
-  background-image: url(./docs/coding-cats.jpeg);
+  background-image: url(./docs/portfolio.png);
 }
 
 .box .project .p5 {
@@ -689,8 +689,7 @@ h2 {
 }
 
 .name-box {
-  width: 95%;
-  font-family: 'Source Code Pro', monospace;
+  width: 83%;
   font-weight: bold;
   border-radius: 15px;
   font-size: .65em;
@@ -770,8 +769,8 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1170px;
-  margin: 15px;
+  max-width: 1100px;
+  margin: 5px;
 }
 
 .main {
@@ -780,6 +779,7 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: calc(100%-50px);
 }
 
 .sidebar {
@@ -822,6 +822,7 @@ h2 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   min-width: 100px;
+  width: calc(100% - 50px);
 }
 
 .skill {
@@ -844,10 +845,28 @@ h2 {
 
 @media (max-width: 499px) {
   .skill {
-    width: 100px;
+    width: 85px;
   }
   .skill p {
     font-size: .7rem;
+  }
+  .sidebar {
+    padding-top: 30px;
+    width: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 350px;
+    border: #A84D45 solid 1px;
+    text-align: center;
+    background-color: #ECDADA;
+    border-radius: 15px;
+    font-size: 0.7em;
+  }
+  .sidebar .social-click {
+    height: 40px;
+    margin: 5px;
+    width: auto;
   }
 }
 
@@ -871,18 +890,6 @@ h2 {
 .about {
   width: 350px;
   padding: 5px;
-}
-
-.content {
-  width: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
 }
 
 #nav a, .block-box a, .project a, .to-top a {
@@ -1027,11 +1034,14 @@ h2 {
   width: 300px;
   border: 1px #A84D45 solid;
   margin: 10px;
-  background-color: #C88F90;
   border-radius: 15px;
 }
 
 .container .b3 {
+  background-color: #DFDCD9;
+  padding: 1em;
+  border: 1px solid #A84D45;
+  border-radius: 15px;
   height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1045,23 +1055,23 @@ h2 {
   text-align: left;
 }
 
-.container .b3 form {
+.container form {
   text-align: left;
   line-height: 30px;
 }
 
-.container .b3 form input {
+.container form input {
   border: 1px solid #A84D45;
   border-radius: 3px;
   width: 270px;
   line-height: 30px;
 }
 
-.container .b3 form input[type=text]:hover {
+.container form input[type=text]:hover {
   background-color: #DFDCD9;
 }
 
-.container .b3 form textarea {
+.container form textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #A84D45;
@@ -1071,11 +1081,11 @@ h2 {
   line-height: 30px;
 }
 
-.container .b3 form textarea:hover {
+.container form textarea:hover {
   background-color: #DFDCD9;
 }
 
-.container .b3 form .btn {
+.container form .btn {
   border: 1px solid #A84D45;
   color: #A84D45;
   border-radius: 5px;
@@ -1084,7 +1094,7 @@ h2 {
   width: 100px;
 }
 
-.container .b3 form .btn:hover {
+.container form .btn:hover {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #C88F90;
@@ -1093,30 +1103,31 @@ h2 {
   color: #ECDADA;
 }
 
-.talk-box {
-  width: 300px;
+.container .talk-box {
   text-align: left;
-  margin: 15px;
+  width: 45%;
+  min-width: 320px;
+  margin: 0 15px 15px 15px;
 }
 
-.talk-box .presenting {
+.container .talk-box .presenting {
   width: 180px;
   height: 100px;
 }
 
-.talk-box .presenting img {
+.container .talk-box .presenting img {
   margin-bottom: 20px;
   cursor: pointer;
   width: 180px;
   height: 100px;
 }
 
-.talk-box .presenting img:hover {
+.container .talk-box .presenting img:hover {
   -webkit-transform: scale(3);
           transform: scale(3);
 }
 
-.gif {
+.container .gif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1130,7 +1141,7 @@ h2 {
   width: 320px;
 }
 
-.gif iframe {
+.container .gif iframe {
   margin: 15px;
 }
 
@@ -1143,14 +1154,13 @@ h2 {
           justify-content: center;
 }
 
-.presenting .box {
-  background-color: #DFDCD9;
-  padding: 1em;
-  border: 1px solid #A84D45;
-  border-radius: 15px;
-}
-
 @media (min-width: 800px) {
+  .wrapper {
+    margin: 15px;
+  }
+  .main {
+    max-width: calc(100%-100px);
+  }
   .name-box {
     width: 80%;
     font-size: 1em;
@@ -1162,9 +1172,12 @@ h2 {
   .skills {
     width: calc(100% - 365px);
   }
+  .space-box {
+    height: 50px;
+  }
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1100px) {
   .wrapper {
     width: calc(100% - 48px);
     margin: 24px auto;

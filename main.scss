@@ -67,12 +67,7 @@ h2{
 
 
 .name-box{
-    width: 95%;
-    // background-color: $lightpink;
-    font-family: 'Source Code Pro', monospace;
-    // opacity: 75%;
-    // padding: 1em;
-    // border: 3px solid $red;
+    width: 83%;
     font-weight: bold;
     border-radius: 15px;
     font-size: .65em;
@@ -113,20 +108,21 @@ h2{
     50% { border-color: $peru }
 }
 
-// general grid layout -mobile first for index page
+// whole page wrapper
 .wrapper {
     display: flex;
-    max-width: 1170px;
-    margin: 15px;
+    max-width: 1100px;
+    margin: 5px;
 }
 
-
+// main content to scroll
 .main {
     display: flex;
     flex-wrap: wrap;
-    // max-width: calc(100%-100px);
+    max-width: calc(100%-50px);
 }
 
+// sidebar to stay
 .sidebar {
     padding-top: 30px;
     width: 100px;
@@ -154,6 +150,8 @@ h2{
         transform: rotate(360deg); 
     }
 }
+
+// skills and icons
 .skill-heading {
       width: 100%;
 }
@@ -162,6 +160,8 @@ h2{
     display: flex;
     flex-wrap: wrap;
     min-width: 100px;
+    width: calc(100% - 50px);
+
 }
 
 .skill {
@@ -174,9 +174,28 @@ h2{
 }
 @media (max-width: 499px) {
     .skill {
-        width: 100px;
+        width: 85px;
         p {
             font-size: .7rem;
+        }
+    }
+
+    .sidebar {
+        padding-top: 30px;
+        width: 50px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        height: 350px;
+        border: $red solid 1px;
+        text-align: center;
+        background-color: $lightpink;
+        border-radius: 15px;
+        font-size: 0.7em;
+        .social-click {
+            height: 40px;
+            margin: 5px;
+            width: auto;
         }
     }
 }
@@ -195,17 +214,19 @@ h2{
     }
 }
 
+
+// ABOUT SECTION
 .about {
     width: 350px;
     padding: 5px;
 }
   
-.content {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
+// .content {
+//     width: auto;
+//     display: flex;
+//     flex-direction: column;
+//     text-align: center;
+// }
 
 // styles for selecting links
 #nav, .block-box, .project, .to-top{
@@ -284,6 +305,7 @@ h2{
     margin-top: 20px;
 }
 
+
 // flex box containers for the different pages with various sizes (per page)
 .container{
     display: flex;
@@ -296,17 +318,22 @@ h2{
         width: 300px;
         border: 1px $red solid;
         margin: 10px;
-        background-color: $pink;
+        // background-color: $pink;
         border-radius: 15px;
 
     }
 
     .b3 {
+        background-color: $light;
+        padding: 1em;
+        border: 1px solid $red;
+        border-radius: 15px;
         height: 480px;
         display: flex;
         justify-content: center;
         p {
             text-align: left;
+            }
         }
 // inner section for easier viewing of text on talks page and the form
         
@@ -359,10 +386,6 @@ h2{
         }
     }
 
-        
-    }
-}
-    
     // .block {
     //     height: 200px;
     //     width: 320px;
@@ -370,9 +393,13 @@ h2{
     // }
 
     .talk-box {
-        width: 300px;
+        // width: 300px;
         text-align: left;
-        margin: 15px;
+        // margin: 15px;
+        width: 45%;
+        // height: 200px;
+        min-width: 320px;
+        margin: 0 15px 15px 15px;
         
        .presenting {
         width: 180px;
@@ -402,27 +429,24 @@ h2{
             margin: 15px;
         }
     }
-
+}
 
 #catanimate {
     display: flex;
     justify-content: center;
 }
 
-.presenting {
-    .box {
-        background-color: $light;
-        padding: 1em;
-        border: 1px solid $red;
-        border-radius: 15px;
-    }
-
-}
 
 
 // large sized screen style changes
 // some styles inherited from mobile and from medium sized device rules
 @media (min-width: 800px) {
+    .wrapper {
+        margin: 15px;
+    }
+    .main {
+        max-width: calc(100%-100px);
+    }
     .name-box {
         width: 80%;
         font-size: 1em;
@@ -434,9 +458,12 @@ h2{
     .skills {
         width: calc(100% - 365px);
     }
+    .space-box {
+        height: 50px;
+    }
 
 }
-@media (min-width: 1170px) {
+@media (min-width: 1100px) {
     .wrapper {
         width: calc(100% - 48px);
         margin: 24px auto;
@@ -444,6 +471,11 @@ h2{
     .panel-image .name-box{
         font-size: 1.5em;
     }
+    // .talk-box {
+    //     width: 300px;
+    //     text-align: left;
+    //     margin: 15px;
+    // }
 
 }
 
