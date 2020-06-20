@@ -132,7 +132,11 @@
 @media (max-width: 499px) {
   #menu_button {
     width: 49px;
+    padding-right: 10px;
     overflow: hidden;
+    background-color: #ECDADA;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #A84D45;
   }
   #menu_label {
     position: relative;
@@ -178,10 +182,10 @@
     display: none;
   }
   #menu_checkbox:checked + #menu_label:before {
-    left: -49px;
+    left: -59px;
   }
   #menu_checkbox:checked + #menu_label:after {
-    left: 49px;
+    left: 59px;
   }
   #menu_checkbox:checked + #menu_label #menu_text_bar:before {
     display: block;
@@ -201,7 +205,13 @@
     color: #C88F90;
     z-index: 4;
   }
+  #nav #nav-selectors ul {
+    border: #A84D45 solid 1px;
+    border-radius: 15px;
+  }
   #nav #nav-selectors li {
+    border: solid #A84D45 1px;
+    border-radius: 5px;
     display: block;
     padding: .5em 1em;
     border-bottom: #C88F90 1px solid;

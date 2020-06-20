@@ -48,15 +48,14 @@ $lightpink:#ECDADA;
         .description {
             color: $dark;
             text-align: center;
-            width: 280px;
+            width: 230px;
             height: 150px;
-            margin-top: 180px;
             padding: 10px;
-            font-size: .9rem;
-
-            h2 {
-                // color: $pink;
-            }
+            font-size: .7em;
+            // p {
+            //     font-size: .7em;
+            // }
+            
         }
     }
 }
@@ -66,7 +65,7 @@ $lightpink:#ECDADA;
     .project {
         
         .final {
-            margin-top: 200px;
+            margin-top: 150px;
             width: 250px;
             background-color: $lightpink;
             height: 100px;
@@ -133,19 +132,19 @@ $lightpink:#ECDADA;
                 background-image: url(./docs/paws/ricky-paw.png);
             }
             .paw2 {
-                background-image: url(./docs/paws/margot-paw.png);
+                background-image: url(./docs/paws/slickrick.png);
             }
             .paw5 {
                 background-image: url(./docs/paws/monkey-paw.png);
             }
             .paw4 {
-                background-image: url(./docs/paws/margot-paw.png);
+                background-image: url(./docs/paws/duncan-paw.png);
             }
             .paw3 {
                 background-image: url(./docs/paws/duncan-paw.png);
             }
             .paw6 {
-                background-image: url(./docs/paws/ricky-paw.png);
+                background-image: url(./docs/paws/margot-paw.png);
             }
         }
     }

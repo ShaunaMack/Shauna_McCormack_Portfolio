@@ -40,16 +40,15 @@
 .box .project .description {
   color: #3C3C30;
   text-align: center;
-  width: 280px;
+  width: 230px;
   height: 150px;
-  margin-top: 180px;
   padding: 10px;
-  font-size: .9rem;
+  font-size: .7em;
 }
 
 @media (max-width: 499px) {
   .project .final {
-    margin-top: 200px;
+    margin-top: 150px;
     width: 250px;
     background-color: #ECDADA;
     height: 100px;
@@ -109,19 +108,19 @@
     background-image: url(./docs/paws/ricky-paw.png);
   }
   .box .project .paw2 {
-    background-image: url(./docs/paws/margot-paw.png);
+    background-image: url(./docs/paws/slickrick.png);
   }
   .box .project .paw5 {
     background-image: url(./docs/paws/monkey-paw.png);
   }
   .box .project .paw4 {
-    background-image: url(./docs/paws/margot-paw.png);
+    background-image: url(./docs/paws/duncan-paw.png);
   }
   .box .project .paw3 {
     background-image: url(./docs/paws/duncan-paw.png);
   }
   .box .project .paw6 {
-    background-image: url(./docs/paws/ricky-paw.png);
+    background-image: url(./docs/paws/margot-paw.png);
   }
 }
 /*# sourceMappingURL=projects.css.map */

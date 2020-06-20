@@ -67,7 +67,7 @@ h2{
 
 
 .name-box{
-    width: 83%;
+    width: 95%;
     font-weight: bold;
     border-radius: 15px;
     font-size: .65em;
@@ -174,9 +174,10 @@ h2{
 }
 @media (max-width: 499px) {
     .skill {
-        width: 85px;
+        width: 80px;
+        margin: 3px;
         p {
-            font-size: .7rem;
+            font-size: .6rem;
         }
     }
 
@@ -186,7 +187,7 @@ h2{
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        height: 250px;
+        height: 300px;
         border: $red solid 1px;
         text-align: center;
         background-color: $lightpink;
@@ -313,13 +314,11 @@ h2{
     flex-wrap: wrap;
     height: auto;
     
-    .box{
-         
+    .box {
         border: 1px $red solid;
         margin: 10px;
         // background-color: $pink;
         border-radius: 15px;
-
     }
 
     .b3 {
@@ -327,6 +326,8 @@ h2{
         padding: 1em;
         border: 1px solid $red;
         border-radius: 15px;
+        width: 45%;
+        min-width: 250px;
         // height: 480px;
         display: flex;
         justify-content: center;
@@ -376,6 +377,8 @@ h2{
             margin-top: 5px;
             width: 100px;
             cursor: pointer;
+            -webkit-appearance: none;
+            -moz-appearance: none;
 
             &:hover {
                 transition: all .2s ease-in-out;
@@ -410,7 +413,7 @@ h2{
                 width: 180px;
                 height: 100px;
                 &:hover {
-                    transform: scale(3); 
+                    transform: scale(2); 
                 }
             }
         }
@@ -424,11 +427,18 @@ h2{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 270px;
-        iframe {
-            margin: 15px;
-        }
+        min-width: 270px;
+        width: 45%;
+        padding: 16px;
     }
+}
+
+.space-box {
+    height: 30px;
+}
+
+.to-top {
+    text-align: center;
 }
 
 #catanimate {
@@ -461,7 +471,9 @@ h2{
     .space-box {
         height: 50px;
     }
-
+    .gif iframe {
+        margin: 15px;
+    }
 }
 @media (min-width: 1100px) {
     .wrapper {

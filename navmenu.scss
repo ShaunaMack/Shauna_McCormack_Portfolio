@@ -3,6 +3,7 @@ $light: #DFDCD9;
 $pink: #C88F90;
 $red: #A84D45;
 $peru: #C08F38;
+$lightpink:#ECDADA;
 
 // rules for header for all screen sizes
 .head {
@@ -61,8 +62,11 @@ $peru: #C08F38;
 
     #menu_button {
         width: 49px;
+        padding-right: 10px;
         overflow: hidden;
-        // background-color: $red;
+        background-color: $lightpink;
+        border-radius: 0 0 15px 15px;
+        border: 1px solid $red;
     }
 
     #menu_label {
@@ -116,11 +120,11 @@ $peru: #C08F38;
     }
 
     #menu_checkbox:checked + #menu_label:before {
-        left: -49px;
+        left: -59px;
     }
 
     #menu_checkbox:checked + #menu_label:after {
-        left: 49px;
+        left: 59px;
     }
 
     #menu_checkbox:checked + #menu_label #menu_text_bar:before {
@@ -142,9 +146,15 @@ $peru: #C08F38;
             top:0;
             color: $pink;
             z-index: 4;
-            
+
+            ul {
+                border: $red solid 1px;
+                border-radius: 15px;
+            }
 
             li {
+                border: solid $red 1px;
+                border-radius: 5px;
                 display: block;
                 padding: .5em 1em;
                 border-bottom: $pink 1px solid;
