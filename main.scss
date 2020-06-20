@@ -186,7 +186,7 @@ h2{
         position: -webkit-sticky;
         position: sticky;
         top: 0;
-        height: 350px;
+        height: 250px;
         border: $red solid 1px;
         text-align: center;
         background-color: $lightpink;
@@ -217,7 +217,7 @@ h2{
 
 // ABOUT SECTION
 .about {
-    width: 350px;
+    width: 250px;
     padding: 5px;
 }
   
@@ -288,7 +288,7 @@ h2{
     .block {
         width: 45%;
         height: 200px;
-        min-width: 320px;
+        min-width: 270px;
         margin: 0 15px 15px 15px;
     }
 }
@@ -327,7 +327,7 @@ h2{
         padding: 1em;
         border: 1px solid $red;
         border-radius: 15px;
-        height: 480px;
+        // height: 480px;
         display: flex;
         justify-content: center;
         p {
@@ -343,10 +343,10 @@ h2{
         line-height: 30px;
         
         input {
-        border: 1px solid $red;
-        border-radius: 3px;
-        width: 270px;
-        line-height: 30px;
+            border: 1px solid $red;
+            border-radius: 3px;
+            width: 100%;
+            line-height: 30px;
         }
 
         input[type=text]:hover {
@@ -358,7 +358,7 @@ h2{
             border: 1px solid $red;
             border-radius: 3px;
             resize: none;
-            width: 270px;
+            width: 100%;
             line-height: 30px;
 
             &:hover {
@@ -375,29 +375,30 @@ h2{
             padding: 5px;
             margin-top: 5px;
             width: 100px;
+            cursor: pointer;
 
             &:hover {
                 transition: all .2s ease-in-out;
                 background-color: $pink;
                 transform: scale(1.2);
                 color: $lightpink;
-                }
+            }
         }
     }
 
     // .block {
     //     height: 200px;
-    //     width: 320px;
+    //     width: 270px;
     //     margin: 0 15px 15px 15px;
     // }
 
     .talk-box {
-        // width: 300px;
+        // width: 250px;
         text-align: left;
         // margin: 15px;
         width: 45%;
         // height: 200px;
-        min-width: 320px;
+        min-width: 270px;
         margin: 0 15px 15px 15px;
         
        .presenting {
@@ -423,7 +424,7 @@ h2{
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 320px;
+        width: 270px;
         iframe {
             margin: 15px;
         }
@@ -471,7 +472,7 @@ h2{
         font-size: 1.5em;
     }
     // .talk-box {
-    //     width: 300px;
+    //     width: 250px;
     //     text-align: left;
     //     margin: 15px;
     // }

@@ -6,8 +6,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   margin: auto;
   border-radius: 5%;
@@ -50,7 +50,7 @@
 @media (max-width: 499px) {
   .project .final {
     margin-top: 200px;
-    width: 300px;
+    width: 250px;
     background-color: #ECDADA;
     height: 100px;
   }
@@ -575,8 +575,6 @@
 }
 
 .my-face .me-original {
-  width: 300px;
-  height: 300px;
   background-image: url(./docs/ShaunaFace.JPG);
   margin: auto;
   top: 0px;
@@ -590,7 +588,7 @@
 
 .my-face .change {
   width: 0;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
@@ -599,24 +597,24 @@
 }
 
 .my-face .me-original:hover .change {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
 }
 
 .my-face .me-original:focus-within .change {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
 }
 
 .my-face .me-original:active .change {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
 }
 
 .my-face .cat-pic {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background-image: url(./docs/dundeeface.JPG);
   opacity: 90%;
   border-radius: 50%;
@@ -856,7 +854,7 @@ h2 {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 350px;
+    height: 250px;
     border: #A84D45 solid 1px;
     text-align: center;
     background-color: #ECDADA;
@@ -888,7 +886,7 @@ h2 {
 }
 
 .about {
-  width: 350px;
+  width: 250px;
   padding: 5px;
 }
 
@@ -1003,7 +1001,7 @@ h2 {
 .block-box .block {
   width: 45%;
   height: 200px;
-  min-width: 320px;
+  min-width: 270px;
   margin: 0 15px 15px 15px;
 }
 
@@ -1030,8 +1028,6 @@ h2 {
 }
 
 .container .box {
-  height: 300px;
-  width: 300px;
   border: 1px #A84D45 solid;
   margin: 10px;
   border-radius: 15px;
@@ -1042,7 +1038,6 @@ h2 {
   padding: 1em;
   border: 1px solid #A84D45;
   border-radius: 15px;
-  height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1063,7 +1058,7 @@ h2 {
 .container form input {
   border: 1px solid #A84D45;
   border-radius: 3px;
-  width: 270px;
+  width: 100%;
   line-height: 30px;
 }
 
@@ -1077,7 +1072,7 @@ h2 {
   border: 1px solid #A84D45;
   border-radius: 3px;
   resize: none;
-  width: 270px;
+  width: 100%;
   line-height: 30px;
 }
 
@@ -1092,6 +1087,7 @@ h2 {
   padding: 5px;
   margin-top: 5px;
   width: 100px;
+  cursor: pointer;
 }
 
 .container form .btn:hover {
@@ -1106,7 +1102,7 @@ h2 {
 .container .talk-box {
   text-align: left;
   width: 45%;
-  min-width: 320px;
+  min-width: 270px;
   margin: 0 15px 15px 15px;
 }
 
@@ -1138,7 +1134,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 320px;
+  width: 270px;
 }
 
 .container .gif iframe {
