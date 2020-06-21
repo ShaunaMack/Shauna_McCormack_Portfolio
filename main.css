@@ -14,27 +14,38 @@
 }
 
 .box .project .p6 {
-  background-image: url(./docs/MentorMarket.png);
+  background-image: url(./docs/mentormarketlogo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .p1 {
-  background-image: url(./docs/Main_Menu.png);
+  background-image: url(./docs/catniplogo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .p2 {
-  background-image: url(./docs/Helpsheets.png);
+  background-image: url(./docs/helpsheetslogo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .p3 {
-  background-image: url(./docs/Jila.png);
+  background-image: url(./docs/wekologo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .p4 {
-  background-image: url(./docs/portfolio.png);
+  background-image: url(./docs/portfoliologo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .p5 {
-  background-image: url(./docs/readitnwipe.png);
+  background-image: url(./docs/Readitnwipelogo.png);
+  background-size: 250px 250px;
+}
+
+.box .project .p7 {
+  background-image: url(./docs/trailerslogo.png);
+  background-size: 250px 250px;
 }
 
 .box .project .description {
@@ -121,6 +132,9 @@
   }
   .box .project .paw6 {
     background-image: url(./docs/paws/margot-paw.png);
+  }
+  .box .project .paw7 {
+    background-image: url(./docs/paws/gigi-paw.png);
   }
 }
 
