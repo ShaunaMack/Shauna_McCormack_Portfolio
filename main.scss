@@ -85,9 +85,10 @@ h2{
         white-space: nowrap; /* Keeps the content on a single line */
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
         letter-spacing: .15em; /* Adjust as needed */
+        animation-delay: 3s;
         animation: 
             typing 3.5s steps(30, end),
-            blink-caret .5s step-end infinite;
+            blink-caret 1s step-end infinite;
         h1 {
             margin-top: 15px;
             
