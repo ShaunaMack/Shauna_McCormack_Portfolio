@@ -660,7 +660,6 @@ body {
 }
 
 h1 {
-  font-family: 'Fredericka the Great', cursive;
   color: #3C3C30;
   text-align: center;
   margin-top: 10px;
@@ -668,7 +667,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Fredericka the Great', cursive;
   color: #A84D45;
   text-align: center;
   -webkit-animation: blinker 1.5s linear;
@@ -710,7 +708,7 @@ h2 {
 }
 
 .name-box {
-  width: 95%;
+  width: 100%;
   font-weight: bold;
   border-radius: 15px;
   font-size: .65em;
@@ -735,7 +733,7 @@ h2 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid #C08F38;
-  /* The typwriter cursor */
+  /* The typewriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
@@ -744,8 +742,8 @@ h2 {
   /* Adjust as needed */
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
-  -webkit-animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
-          animation: typing 3.5s steps(30, end), blink-caret 1s step-end infinite;
+  -webkit-animation: typing 3.5s steps(30, end), blink-caret 1s step-end;
+          animation: typing 3.5s steps(30, end), blink-caret 1s step-end;
 }
 
 .name-box .define h1 {
@@ -811,8 +809,7 @@ h2 {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 500px;
-  border: #A84D45 solid 1px;
+  height: 100vh;
   text-align: center;
   background-color: #ECDADA;
   border-radius: 15px;
@@ -834,7 +831,7 @@ h2 {
           transform: rotate(360deg);
 }
 
-.skill-heading {
+.sub-heading {
   width: 100%;
 }
 
@@ -844,8 +841,6 @@ h2 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-width: 100px;
-  width: calc(100% - 50px);
 }
 
 .skill {
@@ -862,7 +857,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 130px;
+  width: 125px;
   margin: 5px;
 }
 
@@ -880,8 +875,6 @@ h2 {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 300px;
-    border: #A84D45 solid 1px;
     text-align: center;
     background-color: #ECDADA;
     border-radius: 15px;
@@ -916,25 +909,25 @@ h2 {
   padding: 5px;
 }
 
-#nav a, .block-box a, .project a, .to-top a {
+#nav a, .talk-box a, .project a, .to-top a {
   text-decoration: none;
   color: #A84D45;
   text-align: center;
 }
 
-#nav a:hover, .block-box a:hover, .project a:hover, .to-top a:hover {
+#nav a:hover, .talk-box a:hover, .project a:hover, .to-top a:hover {
   color: #DFDCD9;
   background-color: #C88F90;
   border-radius: 5px;
 }
 
-#nav a:focus-within, .block-box a:focus-within, .project a:focus-within, .to-top a:focus-within {
+#nav a:focus-within, .talk-box a:focus-within, .project a:focus-within, .to-top a:focus-within {
   background-color: #A84D45;
   color: #DFDCD9;
   border-radius: 5px;
 }
 
-#nav a:active, .block-box a:active, .project a:active, .to-top a:active {
+#nav a:active, .talk-box a:active, .project a:active, .to-top a:active {
   color: #C88F90;
   background-color: #A84D45;
   border-radius: 5px;
@@ -956,7 +949,7 @@ h2 {
 }
 
 .panel-image img {
-  width: 90%;
+  width: 95%;
   border-radius: 15px;
   padding: 1em;
 }
@@ -1012,25 +1005,6 @@ h2 {
   }
 }
 
-.block-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.block-box .block {
-  width: 45%;
-  height: 200px;
-  min-width: 270px;
-  margin: 0 15px 15px 15px;
-}
-
 .footer {
   left: 0;
   bottom: 0;
@@ -1053,13 +1027,13 @@ h2 {
   height: auto;
 }
 
-.container .box {
+.box {
   border: 1px #A84D45 solid;
   margin: 10px;
   border-radius: 15px;
 }
 
-.container .b3 {
+.b3 {
   background-color: #DFDCD9;
   padding: 1em;
   border: 1px solid #A84D45;
@@ -1074,27 +1048,27 @@ h2 {
           justify-content: center;
 }
 
-.container .b3 p {
+.b3 p {
   text-align: left;
 }
 
-.container form {
+form {
   text-align: left;
   line-height: 30px;
 }
 
-.container form input {
+form input {
   border: 1px solid #A84D45;
   border-radius: 3px;
   width: 100%;
   line-height: 30px;
 }
 
-.container form input[type=text]:hover {
+form input[type=text]:hover {
   background-color: #DFDCD9;
 }
 
-.container form textarea {
+form textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #A84D45;
@@ -1104,11 +1078,11 @@ h2 {
   line-height: 30px;
 }
 
-.container form textarea:hover {
+form textarea:hover {
   background-color: #DFDCD9;
 }
 
-.container form .btn {
+form .btn {
   border: 1px solid #A84D45;
   color: #A84D45;
   border-radius: 5px;
@@ -1120,7 +1094,7 @@ h2 {
   -moz-appearance: none;
 }
 
-.container form .btn:hover {
+form .btn:hover {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #C88F90;
@@ -1129,31 +1103,37 @@ h2 {
   color: #ECDADA;
 }
 
-.container .talk-box {
+.block-box {
+  width: 45%;
+  min-width: 270px;
+  margin: 0 15px 15px 15px;
+}
+
+.talk-box {
   text-align: left;
   width: 45%;
   min-width: 270px;
   margin: 0 15px 15px 15px;
 }
 
-.container .talk-box .presenting {
+.talk-box .presenting {
   width: 180px;
   height: 100px;
 }
 
-.container .talk-box .presenting img {
+.talk-box .presenting img {
   margin-bottom: 20px;
   cursor: pointer;
   width: 180px;
   height: 100px;
 }
 
-.container .talk-box .presenting img:hover {
+.talk-box .presenting img:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
 
-.container .gif {
+.gif {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1187,6 +1167,9 @@ h2 {
 }
 
 @media (min-width: 800px) {
+  .panel-image img {
+    width: 60%;
+  }
   .wrapper {
     margin: 15px;
   }
@@ -1201,9 +1184,6 @@ h2 {
   .name-box .inner-code {
     font-size: 1em;
   }
-  .skills {
-    width: calc(100% - 365px);
-  }
   .space-box {
     height: 50px;
   }
@@ -1217,7 +1197,7 @@ h2 {
     width: calc(100% - 48px);
     margin: 24px auto;
   }
-  .panel-image .name-box {
+  .name-box {
     font-size: 1.5em;
   }
 }
