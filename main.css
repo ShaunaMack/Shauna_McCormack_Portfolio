@@ -927,25 +927,25 @@ h2 {
   padding: 5px;
 }
 
-#nav a, .talk-box a, .project a, .to-top a {
+#nav a, .talk-box a, .project a {
   text-decoration: none;
   color: #A84D45;
   text-align: center;
 }
 
-#nav a:hover, .talk-box a:hover, .project a:hover, .to-top a:hover {
+#nav a:hover, .talk-box a:hover, .project a:hover {
   color: #DFDCD9;
   background-color: #C88F90;
   border-radius: 5px;
 }
 
-#nav a:focus-within, .talk-box a:focus-within, .project a:focus-within, .to-top a:focus-within {
+#nav a:focus-within, .talk-box a:focus-within, .project a:focus-within {
   background-color: #A84D45;
   color: #DFDCD9;
   border-radius: 5px;
 }
 
-#nav a:active, .talk-box a:active, .project a:active, .to-top a:active {
+#nav a:active, .talk-box a:active, .project a:active {
   color: #C88F90;
   background-color: #A84D45;
   border-radius: 5px;
@@ -1193,6 +1193,32 @@ form .btn:hover {
 
 .to-top {
   text-align: center;
+}
+
+.to-top a {
+  text-decoration: none;
+  color: #A84D45;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.to-top a:hover {
+  color: #DFDCD9;
+  background-color: #C88F90;
+  border-radius: 5px;
+}
+
+.to-top a:focus-within {
+  background-color: #A84D45;
+  color: #DFDCD9;
+  border-radius: 5px;
+}
+
+.to-top a:active {
+  color: #C88F90;
+  background-color: #A84D45;
+  border-radius: 5px;
 }
 
 #catanimate {

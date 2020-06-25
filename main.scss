@@ -237,7 +237,7 @@ h2{
   
 
 // styles for selecting links
-#nav, .talk-box, .project, .to-top{
+#nav, .talk-box, .project{
     a {
         text-decoration: none;
         color: $red;
@@ -447,6 +447,30 @@ form {
 
 .to-top {
     text-align: center;
+    a {
+        text-decoration: none;
+        color: $red;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &:hover {
+            color: $light;
+            background-color: $pink;
+            border-radius: 5px;
+        }
+        
+        &:focus-within {
+            background-color: $red;
+            color: $light;
+            border-radius: 5px;
+        }
+        &:active {
+            color: $pink;
+            background-color: $red;
+            border-radius: 5px;
+        }
+    }
 }
 
 #catanimate {
