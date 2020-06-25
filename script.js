@@ -7,7 +7,7 @@
 
 function addRainbow(event){
     debugger;
-    let title = document.getElementById("projects");
+    let title = document.getElementById("typewriter");
     for(i = 0; i < 20; i++){
         let randomColor = 'rgb(' + rgb(255) + ',' + rgb(255) + ',' + rgb(255) + ')';
         title.style.textDecorationColor = randomColor;

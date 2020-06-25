@@ -23,15 +23,15 @@ p,h1,h2,h3,h4,h5,h6{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: $light;
     color: $dark;
     scroll-behavior: smooth;
+    background-color: white;
 }
 
 // rules for headings
 h1{
     // font-family: 'Fredericka the Great', cursive;
-    color: $dark;
+    color: $red;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -67,11 +67,17 @@ h2{
 
 
 .name-box{
-    width: 100%;
+    margin-top: 50px;
+    // width: 100%;
     font-weight: bold;
     border-radius: 15px;
     font-size: .65em;
-    .inner-code {
+    margin-left: auto;
+    margin-right: auto;
+    color: $dark;
+    // display: flex;
+    // justify-content: center;
+    .inner-code, h1 {
         color: $dark;
     }
 
@@ -114,6 +120,7 @@ h2{
     display: flex;
     max-width: 1100px;
     margin: 5px;
+    background-color: $lightpink;
 }
 
 // main content to scroll
@@ -121,20 +128,25 @@ h2{
     display: flex;
     flex-wrap: wrap;
     max-width: calc(100%-50px);
+    background-color: white;
 }
 
 // sidebar to stay
 .sidebar {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 6;
     padding-top: 30px;
     width: 100px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    height: 100vh;
+    height: 95vh;
     // border: $red solid 1px;
     text-align: center;
     background-color: $lightpink;
-    border-radius: 15px;
+    // border-radius: 15px;
 }
 
 
@@ -160,6 +172,7 @@ h2{
 .skills {
     display: flex;
     flex-wrap: wrap;
+    max-width: 850px;
 }
 
 .skill {
@@ -169,6 +182,10 @@ h2{
     align-items: center;
     width: 125px;
     margin: 5px;
+}
+
+.skills-box {
+    // background-color: $light;
 }
 @media (max-width: 499px) {
     .skill {
@@ -180,15 +197,15 @@ h2{
     }
 
     .sidebar {
-        padding-top: 30px;
+        // padding-top: 30px;
         width: 50px;
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: 0px;
         text-align: center;
         background-color: $lightpink;
-        border-radius: 15px;
         font-size: 0.7em;
+        z-index: 6;
         .social-click {
             height: 40px;
             margin: 5px;
@@ -248,12 +265,14 @@ h2{
 
 // index page duck and "code" styling
 .panel-image {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: wiggle 5s infinite;
+    background-image: linear-gradient(to bottom, $lightpink , $light);
+    background-color: $light;
     img{
         width: 95%;
+        animation: wiggle 5s infinite;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 15px;
         padding: 1em;
             &:hover {
@@ -291,6 +310,15 @@ h2{
     flex-wrap: wrap;
     height: auto;
 }
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: auto;
+}
     
 .box {
     border: 1px $red solid;
@@ -299,19 +327,26 @@ h2{
     border-radius: 15px;
 }
 
+.block {
+    margin: 35px 35px 0 0;
+    width: 215px; 
+    height: 215px;
+}
+
+.talks {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    // height: auto;
+    
+}
+
 .b3 {
-    background-color: $light;
     padding: 1em;
-    border: 1px solid $red;
-    border-radius: 15px;
-    width: 45%;
-    min-width: 250px;
-    // height: 480px;
-    display: flex;
-    justify-content: center;
-    p {
-        text-align: left;
-    }
+    width: 75%;
+    max-width: 400px;
+    height: auto;
 }
 // inner section for easier viewing of text on talks page and the form
         
@@ -407,6 +442,7 @@ form {
 
 .space-box {
     height: 30px;
+    width: 100%;
 }
 
 .to-top {
@@ -435,15 +471,18 @@ form {
         max-width: calc(100%-100px);
     }
     .name-box {
-        width: 80%;
+        // width: 100%;
         font-size: 1em;
+        margin-top: 40px;
         margin-bottom: 30px;
-        .inner-code {
-            font-size: 1em;
-        }
+        font-size: 1.3em;
+        // .inner-code {
+        //     font-size: 1em;
+        // }
     }
     .space-box {
         height: 50px;
+        width: 100%;
     }
     .gif iframe {
         margin: 15px;

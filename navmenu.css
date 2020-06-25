@@ -192,6 +192,9 @@
     -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
             animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
   }
+  #nav {
+    width: 50vw;
+  }
   #nav label {
     display: inline-block;
     font-size: 1.5em;
@@ -224,7 +227,7 @@
 
 @media (min-width: 500px) {
   #nav {
-    background-color: #DFDCD9;
+    background-color: white;
     opacity: 75%;
     width: 200px;
   }

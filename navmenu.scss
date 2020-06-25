@@ -133,6 +133,9 @@ $lightpink:#ECDADA;
     }
 
     #nav {
+        width: 50vw;
+        // background-color: white;
+
         label {
             display: inline-block;
             font-size: 1.5em;
@@ -171,7 +174,7 @@ $lightpink:#ECDADA;
 // rules to change layout for medium sized screen like iPad
 @media (min-width: 500px) {
     #nav {
-        background-color: $light;
+        background-color: white;
         opacity: 75%;
         width: 200px;
         ul {
