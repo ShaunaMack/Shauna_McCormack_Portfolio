@@ -48,6 +48,11 @@
   background-size: 250px 250px;
 }
 
+.box .project .p8 {
+  background-image: url(./docs/WeGotThis.png);
+  background-size: 250px 250px;
+}
+
 .box .project .description {
   color: #3C3C30;
   text-align: center;
