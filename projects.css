@@ -13,11 +13,6 @@
   border-radius: 5%;
 }
 
-.box .project .p6 {
-  background-image: url(./docs/mentormarketlogo.png);
-  background-size: 250px 250px;
-}
-
 .box .project .p1 {
   background-image: url(./docs/catniplogo.png);
   background-size: 250px 250px;
@@ -43,6 +38,11 @@
   background-size: 250px 250px;
 }
 
+.box .project .p6 {
+  background-image: url(./docs/mentormarketlogo.png);
+  background-size: 250px 250px;
+}
+
 .box .project .p7 {
   background-image: url(./docs/trailerslogo.png);
   background-size: 250px 250px;
@@ -50,6 +50,11 @@
 
 .box .project .p8 {
   background-image: url(./docs/WeGotThis.png);
+  background-size: 250px 250px;
+}
+
+.box .project .p9 {
+  background-image: url(./docs/pethack.png);
   background-size: 250px 250px;
 }
 
@@ -126,19 +131,16 @@
   .box .project .paw2 {
     background-image: url(./docs/paws/slickrick.png);
   }
-  .box .project .paw5 {
+  .box .project .paw3 {
     background-image: url(./docs/paws/monkey-paw.png);
   }
   .box .project .paw4 {
     background-image: url(./docs/paws/duncan-paw.png);
   }
-  .box .project .paw3 {
-    background-image: url(./docs/paws/duncan-paw.png);
-  }
-  .box .project .paw6 {
+  .box .project .paw5 {
     background-image: url(./docs/paws/margot-paw.png);
   }
-  .box .project .paw7 {
+  .box .project .paw6 {
     background-image: url(./docs/paws/gigi-paw.png);
   }
 }

@@ -21,10 +21,6 @@ $lightpink:#ECDADA;
             // right: 0;
             border-radius: 5%;
         }
-        .p6 {
-            background-image: url(./docs/mentormarketlogo.png);
-            background-size: 250px 250px;
-        }
 
         .p1 {
             background-image: url(./docs/catniplogo.png);
@@ -50,13 +46,20 @@ $lightpink:#ECDADA;
             background-image: url(./docs/Readitnwipelogo.png);
             background-size: 250px 250px;
         }
-
+        .p6 {
+            background-image: url(./docs/mentormarketlogo.png);
+            background-size: 250px 250px;
+        }
         .p7 {
             background-image: url(./docs/trailerslogo.png);
             background-size: 250px 250px;
         }
         .p8 {
             background-image: url(./docs/WeGotThis.png);
+            background-size: 250px 250px;
+        }
+        .p9 {
+            background-image: url(./docs/pethack.png);
             background-size: 250px 250px;
         }
 
@@ -149,19 +152,16 @@ $lightpink:#ECDADA;
             .paw2 {
                 background-image: url(./docs/paws/slickrick.png);
             }
-            .paw5 {
+            .paw3 {
                 background-image: url(./docs/paws/monkey-paw.png);
             }
             .paw4 {
                 background-image: url(./docs/paws/duncan-paw.png);
             }
-            .paw3 {
-                background-image: url(./docs/paws/duncan-paw.png);
-            }
-            .paw6 {
+            .paw5 {
                 background-image: url(./docs/paws/margot-paw.png);
             }
-            .paw7 {
+            .paw6 {
                 background-image: url(./docs/paws/gigi-paw.png);
             }
         }
